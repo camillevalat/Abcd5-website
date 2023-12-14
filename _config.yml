@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
 title: Cheat sheet for a perfect movie
 description: Data Story For A Perfect Movie
 show_downloads: True
