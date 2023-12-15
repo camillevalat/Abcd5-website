@@ -1,7 +1,3 @@
----
-layout: default
----
-
 By Victoria, Anna, Camille, Asama, Ilyaas
 
 
