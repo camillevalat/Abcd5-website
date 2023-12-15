@@ -1,5 +1,3 @@
-By Victoria, Anna, Camille, Asama, Ilyaas
-
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
