@@ -2,7 +2,5 @@ title: Cheat sheet for a perfect movie
 description: Data Story For A Perfect Movie
 show_downloads: true
 google_analytics:
-theme: jekyll-theme-cayman
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+theme: jekyll-theme-slate
+# remote_theme: pages-themes/cayman@v0.2.0
