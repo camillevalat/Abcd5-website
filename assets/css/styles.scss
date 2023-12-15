@@ -8,7 +8,7 @@
 
 /* Set a background image for the header */
 .page-header {
-    background-image: url('/assets/img/background-photo.jpeg') !important; /* The path to your header image */
+    background-image: url('/assets/img/background-photo.jpeg'); /* The path to your header image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; /* Adjust as needed for your image */
