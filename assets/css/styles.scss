@@ -7,7 +7,7 @@
 /* Custom CSS/SCSS starts here */
 
 /* Set a background image for the header */
-.page-header {
+header.page-header {
     background-image: url('/assets/img/background-photo.jpeg'); /* The path to your header image */
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,8 +15,8 @@
 }
 
 /* You can also set the color of the header text if needed */
-.page-header h1,
-.page-header h2 {
+header.page-header h1,
+header.page-header h2 {
     color: #FF0000; /* This sets the text color to white, change as needed */
 }
 
