@@ -8,18 +8,20 @@ body {
     text-align: center; /* Center text */
 }
 
-/* Center the content of unordered and ordered lists */
 ul, ol {
-    text-align: center;
-    list-style-position: inside; /* Position bullets inside the content flow */
-    padding: 0; /* Remove default padding */
+    padding: 0;
+    margin: 0 auto; /* Center the list in the container */
+    text-align: left; /* Align the text to the left */
 }
 
-/* Center the list items themselves */
-li {
-    display: inline-block; /* Make list items inline-block so they can be centered */
-    text-align: left; /* Align text to the left within the centered block */
-    width: 100%; /* Set a width to ensure they fill the container */
+ul {
+    list-style-type: disc; /* or whatever list-style you prefer */
+    list-style-position: inside; /* Ensures the bullets are within the flow of the text */
+}
+
+ol {
+    list-style-type: decimal; /* or whatever list-style you prefer */
+    list-style-position: inside; /* Ensures the numbers are within the flow of the text */
 }
 
 .main-content {
@@ -35,6 +37,8 @@ li {
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center; /* Center the header text */
+    min-height: 200px; /* Add a minimum height */
+    padding: 20px 0; /* Add some padding */
 }
 
 /* You can also set the color of the header text if needed */
