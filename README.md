@@ -1,5 +1,7 @@
-# Introduction
-testetstes
+# Cheat Sheet For A Perfect Movie
+By Victoria, Anna, Camille, Asama, Ilyaas
+
+**little intro : like blabla how to make a good movie **
 
 # ADA Template Website
 ## Usage
