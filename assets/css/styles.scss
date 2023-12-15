@@ -8,6 +8,20 @@ body {
     text-align: center; /* Center text */
 }
 
+/* Center the content of unordered and ordered lists */
+ul, ol {
+    text-align: center;
+    list-style-position: inside; /* Position bullets inside the content flow */
+    padding: 0; /* Remove default padding */
+}
+
+/* Center the list items themselves */
+li {
+    display: inline-block; /* Make list items inline-block so they can be centered */
+    text-align: left; /* Align text to the left within the centered block */
+    width: 100%; /* Set a width to ensure they fill the container */
+}
+
 .main-content {
     margin-left: auto;
     margin-right: auto;
