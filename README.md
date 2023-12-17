@@ -31,4 +31,56 @@ Which character names associate with which genre best?
   
 Do films with sequels have a higher weighted_score?
 *   Png plot
-*   While films with 2 sequences vary among their 
+*   While films with 2 sequences vary among their
+
+---
+
+Trope/Type
+
+For this next part, we look into typical character types, and if their presence has any effect on movie ratings. By analysing ….
+
+*   Which types are most and least popular
+    * We started by grouping the data by character type and calculating the mean of their weighted scores. One can identify character types that are generally more positively received (higher scores) or those that might need improvement (lower scores). In this analysis, the two highest scores correspond to meaner, more aggressive characters. While the least two popular are women characters. Specifically, the type with the lowest mean weighted score is a woman character with a stronger character. Let’s see how trends differ when we separate the men and women types?
+
+*   Does this trend change based on whether the type is a man or a woman?
+    * We see that our data has multiple character types corresponding to men, but only 7 types corresponding to women.
+
+*   Which type is more popular for a specific genre (?)
+    * Write results
+
+*   Are character names or character types more influential on weighted_score?
+    * Now that we have gone through the different effects character names and character types have on ratings, it's time for a verdict! Which one is more influential? Instead of looking at each character name or type as a single feature, and analyse multiple p-values at once, we decided to base our conclusion on the R-squared value. This value was 0.95 for character names and 0.57 for character types, meaning that characters explain more of the variance of the weighted score compared to the types.  
+This implies that the distinct individual characters have a stronger influence on a film's score compared to the character types. It suggests that specific character identities might have a more apparent impact on a movie's rating in our dataset than the character types they represent.
+
+--- 
+
+## Cracking the Code: When Should You Release Your Movie?
+
+We're on a mission to figure out the best time to launch a movie. Why? Because we're not just aiming for success; we're aiming for the very best kind. And to crack this secret code, we're diving deep into the world of movie release timing.
+
+Our Game Plan:
+
+*  Looking at Each Type: We're not treating all movies the same. Nope! We're looking at each type or "genre" because each one has its own perfect time to shine.
+
+*  Average Check: Armed with numbers, we're going to figure out the average performance for each genre in every month. This way, we can spot patterns and find out when each genre likes to do its best.
+
+*  Top 20 Only: We're not looking at every type of movie out there. Nope, that would take forever! We're focusing on the top 20 most liked genres. These are the big players in the movie world.
+
+Are you ready to unlock the secret to perfect movie timing? Get ready to discover when each genre shines the brightest! 
+
+(plot average genre per month)
+
+Action/Adventure takes the stage, captivating audiences with adrenaline-pumping tales in the sizzling months of June, July, and the festive December. Thriller aficionados, take note – the fourth month is your golden opportunity to shine, dominating the scene like never before. December is the month where Romantic Drama truly stands out among its peers. 
+And for those moments when you find yourself in the midst of creative indecision, fear not! We've got your back with the ultimate cheat sheet. Across all months, the top three genres that consistently steal the spotlight are Action/Adventure, Thriller, and Mystery. These genres seem to have the Midas touch, bringing success no matter the season.
+
+
+Now, let's talk about timing. If you're aiming for those chart-topping moments, mark your calendar for June, September, and December. These months stand tall as the shining stars of cinematic success, promising the perfect backdrop for your movie to dazzle and captivate audiences.
+So, whether you're navigating the labyrinth of genres or pondering the calendar months, remember these top picks. It's not just about making a movie; it's about making the right moves at the right time. Lights, camera, action – let the magic unfold!
+
+(fun fact)
+
+We've curated a special treat just for you – a graph that unveils the fascinating journey of genres over time. Dive into the enchanting realm of filmmaking and witness the ebb and flow of genres, a delightful nugget of insight for all you moviemakers out there. Because understanding the past is the key to crafting a mesmerizing future in the world of cinema! 
+
+(Graph of the genres over the years)
+
+
