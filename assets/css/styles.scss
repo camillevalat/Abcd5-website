@@ -11,12 +11,11 @@ h3 {
 }
 
 hr {
-  border: none;
   height: 1px;
   background-color: #B19CD9; /* Color of the line */
+  border: none;
   width: 50%; /* Adjust the width as needed */
-  margin: 20px auto; /* Top and bottom margins and auto margins on the sides */
-  display: block; /* Ensures that hr is treated as a block-level element */
+  margin: 0 auto; /* Zero out the top and bottom margins, and auto on the sides */
 }
 
 
