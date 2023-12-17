@@ -18,4 +18,12 @@ h3 {
   margin: 0 auto; /* Center the line */
 }
 
+.page-header {
+  background-image: url('/img/background-photo.jpeg'); /* Replace with your image's path */
+  background-size: cover; /* Ensures the background covers the header area */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
 
