@@ -35,7 +35,7 @@ Do films with sequels have a higher weighted_score?
 
 ---
 
-Trope/Type
+## Trope/Type
 
 For this next part, we look into typical character types, and if their presence has any effect on movie ratings. By analysing ….
 
