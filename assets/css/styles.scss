@@ -12,9 +12,11 @@ h3 {
 
 hr {
   border: none;
-  height: 1px; // This sets the thickness of the line
-  background-color: #B19CD9; // This sets the color of the line
-  width: 50%; // This sets the width of the line to be 50% of the container
-  margin: 20px auto; // This adds 20px margin on the top and bottom, and auto on the sides centers the line
+  height: 1px;
+  background-color: #B19CD9; /* Color of the line */
+  width: 50%; /* Adjust the width as needed */
+  margin: 20px auto; /* Top and bottom margins and auto margins on the sides */
+  display: block; /* Ensures that hr is treated as a block-level element */
 }
+
 
