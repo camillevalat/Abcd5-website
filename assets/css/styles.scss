@@ -2,3 +2,10 @@
 ---
 
 @import "{{ site.theme }}";
+
+// Custom styles for the "Get Ready" heading
+h3 {
+  text-align: center; // This centers the text
+  font-size: 32px; // Adjust the font size as needed to make it bigger
+  margin-top: 50px; // Adds space above the heading, adjust as needed
+}
