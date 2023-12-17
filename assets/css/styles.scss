@@ -19,10 +19,10 @@ h3 {
 }
 
 .page-header {
-  background-image: url('/img/background-photo.jpeg'); /* Replace with your image's path */
-  background-size: cover; /* Ensures the background covers the header area */
-  background-position: center center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-image: url('/img/background-photo.jpeg') !important; /* Replace with your image's path */
+  background-size: cover !important; /* Ensures the background covers the header area */
+  background-position: center center !important; /* Centers the image */
+  background-repeat: no-repeat !important; /* Prevents the image from repeating */
 }
 
 
