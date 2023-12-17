@@ -1,7 +1,5 @@
 ---
-# This is the front matter section.
-# You can set page-specific metadata here, like the layout or title.
-# Since this is a README file, we not need a front matter.
+
 ---
 
 ### Get Ready
