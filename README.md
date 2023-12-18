@@ -165,7 +165,9 @@ Our Game Plan:
 
 Are you ready to unlock the secret to perfect movie timing? Get ready to discover when each genre shines the brightest! 
 
-(plot average genre per month)
+
+<iframe src="./assets/img/genre_month_line_plot.html" width="100%" height="600"></iframe>
+
 
 Action/Adventure takes the stage, captivating audiences with adrenaline-pumping tales in the sizzling months of June, July, and the festive December. Thriller aficionados, take note – the fourth month is your golden opportunity to shine, dominating the scene like never before. December is the month where Romantic Drama truly stands out among its peers. 
 And for those moments when you find yourself in the midst of creative indecision, fear not! We've got your back with the ultimate cheat sheet. Across all months, the top three genres that consistently steal the spotlight are Action/Adventure, Thriller, and Mystery. These genres seem to have the Midas touch, bringing success no matter the season.
