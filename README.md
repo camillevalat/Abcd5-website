@@ -274,6 +274,73 @@ There are now bigger and less overlapping topics compared to the first visualisa
 
 We can now use the information provided by this model alongside the information provided by the movie metadata table to try and see if we can learn some useful things about creating a successful movie. The final data matrix looks like this:
 
+|    ID   |      movie_name     |  averageRating  |  Dominant_Topic  |    Topic_score 
+|:-----   |:------------------  |:--------------  |:-----------------|:--------------- |
+| 975900  | Ghosts of Mars      |       4.9       |       29         |       0.35      |
+| 9363483 | White Of The Eye    |       6.1       |       2          |       0.99      |
+| 261236  | A Woman in Flames   |       5.9       |       18         |       0.96      |
+| 6631279 | Little city         |       5.8       |       3          |       0.42      |
+| 171005  | Henry V             |       7.5       |       9          |       0.81      |
+|   ...   |      ...            |       ...       |       ...        |        ...      |
+
+
+
+
+Each movie now has a dominant topic alongside the topic score. The dominant topic is the topic with highest probability for the movie plot and the topic score depicts how probable it is. 
+
+First thing we can explore is to separate the successful movies from the rest and plot topic frequencies to see if some particular topics predict the success of a movie:
+
+
+<p align="center">
+  <img src="./assets/img/plots-graph3.png" width="60%">
+</p>
+
+
+While some topics are more frequent than others, it seems that the proportion of successful movies to the rest is similar across all topics. This indicates that no particular topics predict the success of a movie and a director can thus choose to write a plot about any one of these topics. The following is the proportions in percentage: 
+
+|    Topic    | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13| 14| 15| 16| 17| 18| 19| 20| 21| 22| 23| 24| 25| 26| 27| 28| 29| 30
+|:------------|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+|  Proportion |30 |29 |25 |28 |30 |32 |29 |29 |28 |27 |29 |28 |28 |26 |27 |30 |26 |27 |26 |25 |29 |29 |28 |28 |28 |30 |26 |28 |26 |29 |
+
+
+
+Seeing the precise proportion percentages between successful movies and the rest it is evident that there are no topics that stand out which confirms our observation from the plot. So far our observations show that the choice of topic do not affect the movie rating. However, is this also the case when considering the very best movies against the very worst?
+
+
+<p align="center">
+  <img src="./assets/img/plots-graph4.png" width="60%">
+</p>
+
+Above we have plotted the top 1000 movies against the bottom 1000, and even here we see that the topic frequencies match very well. 
+
+We can also look at the average rating per topic:
+
+| Dominant_Topic | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30
+|:-------------- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- |:-- | 
+| averageRating  |6.27|6.24|6.21|6.24|6.27|6.39|6.22|6.27|6.21|6.21|6.32|6.23|6.26|6.24|6.22|6.25|6.21|6.23|6.2 |6.2 |6.26|6.22|6.22|6.22|6.21|6.29|6.26|6.26|6.15|6.28|
+
+
+The average rating per topic also confirms that there are no particular topics that predict success better than others.
+
+Another interesting thing to consider is if movies that are more concentrated on a single topic, and thus have a high dominant topic score, will have a higher rating. The intuition is that a more focused narrative might be more compelling for the viewer. We can explore this by doing a scatterplot between average rating and topic score:
+
+<p align="center">
+  <img src="./assets/img/plots-graph5.png" width="60%">
+</p>
+
+It seems that there is no correlation between topic score and average rating. This means that a director can spread his movie plot across multiple topics without affecting his chance of success.
+
+### Conclusions
+
+From our analysis of the topics we see that there is no particular topic that predicts success in a movie. This was evident with how the topic distributions were similar between successful movies and the rest of the movies. Even when looking at the average rating for each topic, there was no significant difference.
+
+Furthermore, a higher topic score did not have any correlation with average score and thus a movie plot that is 'concentrated' on a single topic did not mean a better movie.
+
+These conclusions are only viable when considering the topic modelling that was performed. There are still many ways to improve on the topic modelling. For instance, the preprocessing could be improved by removing names and nouns, and removing common words like 'find'.
+Furthermore, other algorithms could be used like BERTopic or NMF.
+
+So for now, our conclusions mean that you can create a movie on any topic and not have it affect the rating which means more creative freedom.
+
 
 
 
