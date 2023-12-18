@@ -110,7 +110,7 @@ Before we proceed, brief notes:
 
 Now, let’s observe the basic descriptive statistics of these 2 categories.
 
-| head1     | Category 1   | Category 2 |
+|           | Category 1   | Category 2 |
 |:----------|:-------------|:-----------|
 | count     |     1833     |     1833   |
 | std       |     15.5     |      18    |
@@ -124,8 +124,15 @@ Wouldn’t it be more insightful with some visual aids?
 Let’s take a look at the boxplots from both categories.
 
 <p>
-  <img src="./assets/img/language_boxplots.png" alt="">
+  <img src="./assets/img/language_boxplots.png" width="60%" >
 </p>
+
+Additionally,  histograms offer a more detailed view of the weighted score distributions.
+
+<p>
+  <img src="./assets/img/language_categories_distrib.png" width="60%" >
+</p>
+
 
 ---
 
