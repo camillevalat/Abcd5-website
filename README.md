@@ -62,6 +62,15 @@ In the vast world of cinema, language is more than just words, it is a bridge th
 Let’s dive right into that and start by exploring the 10 most frequently used languages.
 
 
+<div style="display: flex; justify-content: space-between;">
+    <img src="./assets/img/language_count_top10.png" width="45%" />
+    <img src="./assets/img/language_top10_pie.png" width="45%" />
+</div>
+
+As no surprise, English takes the center stage, standing as the undisputed leader.
+
+Let’s also quickly examine the average scores associated with each of these top 10 languages.
+
 
 
 ---
