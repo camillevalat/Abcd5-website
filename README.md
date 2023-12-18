@@ -187,6 +187,64 @@ We've curated a special treat just for you – a graph that unveils the fascinat
 
 ## Unveiling the Enigma: Decoding Movie Plots for Cinematic Brilliance
 
+Our journey into the heart of cinematic success takes an exciting turn as we venture into the captivating world of movie plots. The narratives that unfold on the screen hold the key to audience engagement, emotional resonance, and the elusive magic that turns a film into a masterpiece.
+The movie plots are neatly organized in a separate table. Let's dive into this dataset and unearth the insights that could potentially elevate our craft. The stage is set, and our quest to enhance the art of filmmaking is about to unfold.
+
+|    id       |                                     movie plot
+|:----------  |:--------------------------------------------------------------------------------------------------------|
+| 23890098    | Shlykov, a hard-working taxi driver and Lyosha, a saxophonist, develop a bizarre love-hate relat...     | 
+| 31186339    | The nation of Panem consists of a wealthy Capitol and twelve poorer districts. As punishment for...     | 
+| 20663735    | Poovalli Induchoodan is sentenced for six years prison life for murdering his classmate. Induch...      | 
+| 2231378     | The Lemon Drop Kid , a New York City swindler, is illegally touting horses at a Florida racetrac...     |  
+| 595909      | Seventh-day Adventist Church pastor Michael Chamberlain, his wife Lindy, their two sons, and the...     | 
+
+
+The movieplot table consists of 2 columns. An ‘id’ column that serves as a reference to the movies in the metadata table, and a ‘movieplot’ column that holds the plot description for the movie. There are in total 42306 movieplots and they vary in length. It is therefore interesting to visualise the distribution of the plot lengths in a histogram:
+
+
+<p align="center">
+  <img src="./assets/img/plots-graph1.png" alt="">
+</p>
+
+It is more common to find short plots compared to longer ones which is evident in the histogram above. It seems that plots with a length between 0-999 characters are the most common, and the frequency rapidly declines as the length increases. Furthermore, the longest plot in the dataset is 28158 characters long.
+
+To make an analysis of the plots more feasible, it is important to perform preprocessing of the text data. This means that the plots are processed in a way so that everything becomes lower case, common words and special characters are removed, words are reduced to their base form and finally the plots are split into individual tokens.
+
+Before preprocessing:
+“The Lemon Drop Kid , a New York City swindler, is illegally touting horses at a Florida racetrack.”
+
+After preprocessing:
+['lemon', 'drop', 'kid', 'new', 'york', 'city', 'swindler', 'illegally', 'tout', 'horse', 'florida', 'racetrack']
+
+The steps above are also a great way to reduce the unique word count in the dataset. Before there were 386118 unique words an
+
+The next step is to convert the text data into a numerical format that can be used in algorithms. First step is to create a dictionary of all possible words in the dataset and assign an id to each one of them:
+
+First 5 words and their ids:
+
+|    id  |   word
+|:-----  |:----------|
+|   0    | bizare    | 
+|   1    | despite   | 
+|   2    | develop   | 
+|   3    | different |  
+|   4    | driver    | 
+
+
+This dictionary allows for the creation of a term-frequency matrix that stores, for each movieplot, the frequency of a word occurrence. The result looks like this:
+
+[(25, 1), (57, 1), (67, 1), (103, 1), (203, 1), (207, 3), (255, 1), … ,(321, 3)]
+
+The above highlights, for a certain movie plot, that the word with id 203 occurs once in the plot, and the word with id 207 occurs 3 times.
+
+We have already explored what information can be provided by the movie genres, but we can be more granular and explore the topics of the movie plots. While a genre can be ‘action movie’ a topic might be ‘2nd world war’. However, currently we have to infer the topics from the plots themselves as there is currently no column or feature in the dataset that informs us about this. But reading through each movie plot and deciding on a topic would be too time consuming. Fortunately, we can use an unsupervised algorithm, called Latent Dirichlet Analysis (LDA), to automatically discover the main topics of the dataset. Furthermore, we would get a probability distribution over the topics for each movie, and a probability distribution over the words in each topic. The result of performing LDA on the dataset look like so:
+
+<small>[(54, '0.006*"find" + 0.005*"jill" + 0.005*"father" + 0.004*"leave" + ''0.004*"friend" + 0.004*"life" + 0.004*"tell" + 0.004*"later" + 0.004*"love" ''+ 0.003*"man"'),
+(38, '0.009*"find" + 0.005*"try" + 0.005*"kill" + 0.004*"tell" + 0.004*"leave" + ''0.004*"away" + 0.004*"car" + 0.004*"run" + 0.003*"man" + 0.003*"later"'),
+ (23, '0.008*"tell" + 0.008*"man" + 0.007*"leave" + 0.007*"jake" + 0.007*"find" + ''0.006*"kill" + 0.005*"time" + 0.005*""" + 0.004*"try" + 0.004*"police"'), …]
+</small>
+
+The result is a list of topic ids followed by the 10 most prominent words for each topic and their probability. The following is an interactive visualisation over the discovered topics:
 
 
 
