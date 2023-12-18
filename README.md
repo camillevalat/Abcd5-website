@@ -212,11 +212,11 @@ To make an analysis of the plots more feasible, it is important to perform prepr
 
 Before preprocessing:
 
-“The Lemon Drop Kid , a New York City swindler, is illegally touting horses at a Florida racetrack.”
+*   “The Lemon Drop Kid , a New York City swindler, is illegally touting horses at a Florida racetrack.”
 
 After preprocessing:
 
-['lemon', 'drop', 'kid', 'new', 'york', 'city', 'swindler', 'illegally', 'tout', 'horse', 'florida', 'racetrack']
+*   ['lemon', 'drop', 'kid', 'new', 'york', 'city', 'swindler', 'illegally', 'tout', 'horse', 'florida', 'racetrack']
 
 The steps above are also a great way to reduce the unique word count in the dataset. Before there were 386118 unique words an
 
@@ -247,6 +247,32 @@ We have already explored what information can be provided by the movie genres, b
 </small>
 
 The result is a list of topic ids followed by the 10 most prominent words for each topic and their probability. The following is an interactive visualisation over the discovered topics:
+
+<iframe src="./assets/img/lad_100.html" width="100%" height="600"></iframe>
+
+What we are seeing are topics projected onto a 2D principal component space. Each topic is represented by a circular cluster and the size depicts the percentage of movie plots that fall within that topic. Two clusters who are closer to each other are more similar than two who are far from each other. When a cluster is highlighted, the top term frequency within that topic is shown to the right alongside the overall term frequency in the dataset.
+
+As you have probably noticed, the topics do not have a name and are only depicted by an id. However, the top term frequencies for a topic might give an indication of what that topic is about. Unfortunately it is not always clear, especially if many topics overlap. Thus, a better LDA model would create bigger and less overlapping clusters. In this case, there are many small and overlapping clusters meaning there is room for improvement. 
+
+You could look at the visualisation of an LDA model to judge how good it is, but another more precise way is to use coherence scores. A higher coherence score means more coherent and interpretable topics. There are multiple ways to measure coherence, but in this analysis we are using C_v coherence score which computes 
+
+the score based on the probability of words co-occuring in the dictionary of the dataset. The coherence score for the model above is: Cvscore = 0.2685.
+
+The model above shows many overlapping and small topics, and it is therefore a good idea to create a model with less topics. The following is a plot showing various LDA models with different topic amounts and their C_v scores:
+
+<p align="center">
+  <img src="./assets/img/plots-graph2.png" width="60%">
+</p>
+
+
+The LDA model with 30 topics got the highest coherence score. The rest of the analysis will therefore use this LDA model. Here is the interactive visualisation of this model:
+
+<iframe src="./assets/img/lad_30.html" width="100%" height="600"></iframe>
+
+
+There are now bigger and less overlapping topics compared to the first visualisation. And by highlighting topic 5 it seems that this topic has captured movie plots about action and war. This is due to words like: captain, escape, war, ship, attack, german, police, soldier etc.
+
+We can now use the information provided by this model alongside the information provided by the movie metadata table to try and see if we can learn some useful things about creating a successful movie. The final data matrix looks like this:
 
 
 
