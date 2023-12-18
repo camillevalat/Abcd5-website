@@ -63,8 +63,8 @@ Let’s dive right into that and start by exploring the 10 most frequently used 
 
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="./assets/img/language_count_top10.png" width="45%" />
-    <img src="./assets/img/language_top10_pie.png" width="45%" />
+    <img src="./assets/img/language_count_top10.png" width="50%" />
+    <img src="./assets/img/language_top10_pie.png" width="50%" />
 </div>
 
 As no surprise, English takes the center stage, standing as the undisputed leader.
