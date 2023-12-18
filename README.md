@@ -154,7 +154,7 @@ Do films with sequels have a higher weighted_score?
 ## Cracking the Code: When Should You Release Your Movie?
 
 <div style="display: flex; align-items: center;">
-    <img src="./assets/img/year-month-design.pjg" width="40%" style="margin-right: 10px;" />
+    <img src="./assets/img/year-month-design.jpg" width="40%" style="left: 10px;" />
     <p>
         We're on a mission to figure out the best time to launch a movie. Why? Because we're not just aiming for success; we're aiming for the very best kind. And to crack this secret code, we're diving deep into the world of movie release timing.
     </p>
