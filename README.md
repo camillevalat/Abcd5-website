@@ -180,7 +180,8 @@ So, whether you're navigating the labyrinth of genres or pondering the calendar 
 
 We've curated a special treat just for you – a graph that unveils the fascinating journey of genres over time. Dive into the enchanting realm of filmmaking and witness the ebb and flow of genres, a delightful nugget of insight for all you moviemakers out there. Because understanding the past is the key to crafting a mesmerizing future in the world of cinema! 
 
-(Graph of the genres over the years)
+<iframe src="./assets/img/avg_ratings-plot.html" width="100%" height="600"></iframe>
+
 
 --- 
 
