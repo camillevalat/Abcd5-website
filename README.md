@@ -165,23 +165,6 @@ Our Game Plan:
 
 Are you ready to unlock the secret to perfect movie timing? Get ready to discover when each genre shines the brightest! 
 
-
-<style>
-    .responsive-iframe-container {
-        position: relative;
-        padding-top: 56.25%; /* 16:9 Aspect Ratio */
-        height: 0;
-    }
-    .responsive-iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
-</style>
-
 <div class="responsive-iframe-container">
     <iframe src="./assets/img/genres_month_line_plot.html" allowfullscreen></iframe>
 </div>
