@@ -71,6 +71,22 @@ As no surprise, English takes the center stage, standing as the undisputed leade
 
 Let’s also quickly examine the average scores associated with each of these top 10 languages.
 
+<div style="display: flex;">
+    <img src="./assets/img/language_top10_score.png" width="60%" style="margin-right: 10px;" />
+    <p>
+        For now, we don’t observe a significant difference in average scores, especially among the top 5 languages.
+    </p>
+</div>
+
+However, it gets intriguing when we seek to establish a connection between language and a movie’s country of origin.
+
+To achieve this, we build a heat map using data from the first 200 movies in our dataset. That allows us to gain insights into the distribution of languages across different countries, while maintaining a comprehensible heatmap, considering the complexity of analyzing our collection of about 55000 movies.
+
+![heatmap_lang](./assets/img/language_heatmap.png.jpg)
+
+Once again, it comes that English reigns supreme as the most widely used language. Additionally, it’s evident that the majority of English-language films originate from the United State of America, followed by the United Kingdom.
+
+
 
 
 ---
