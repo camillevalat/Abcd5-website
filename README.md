@@ -93,6 +93,22 @@ To achieve this, we build a heat map using data from the first 200 movies in our
 
 Once again, it comes that English reigns supreme as the most widely used language. Additionally, it’s evident that the majority of English-language films originate from the United State of America, followed by the United Kingdom.
 
+### And what now?
+
+Our initial foray into language analysis has provided us with a glimpse of the linguistic landscape in the world of cinema. As we’re aware, English is the most widely spoken language globally, so it begs the following question: what’s the impact of English usage on a movie’s success? 
+For this investigation, we categorized movies into 2 distinct groups:
+•	Category 1 : movies not in English (excluding those from  the USA or  the UK)
+•	Category 2 : the movies that are in at least English and 1 (any) other language (excluding those from  the USA or  the UK)
+
+Before we proceed, brief notes:
+*   We've excluded movies from the USA and the UK since English is their primary language, and our earlier analysis revealed that most English-language movies originate from these 2 countries.
+
+*   In Category 2, we've set the condition of including English and at least one other language to exclude movies from countries where English is the primary language (e.g., Canada)
+
+*   Our dataset comprises 20,625 movies in Category 1 and 1,833 in Category 2. To ensure a fair comparison, we've randomly selected 1,833 movies from Category 1 for our future analysis
+
+
+Now, let’s observe the basic descriptive statistics of these 2 categories.
 
 
 
