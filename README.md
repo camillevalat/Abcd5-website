@@ -203,7 +203,7 @@ The movieplot table consists of 2 columns. An ‘id’ column that serves as a r
 
 
 <p align="center">
-  <img src="./assets/img/plots-graph1.png" alt="">
+  <img src="./assets/img/plots-graph1.png" width="60%">
 </p>
 
 It is more common to find short plots compared to longer ones which is evident in the histogram above. It seems that plots with a length between 0-999 characters are the most common, and the frequency rapidly declines as the length increases. Furthermore, the longest plot in the dataset is 28158 characters long.
@@ -211,9 +211,11 @@ It is more common to find short plots compared to longer ones which is evident i
 To make an analysis of the plots more feasible, it is important to perform preprocessing of the text data. This means that the plots are processed in a way so that everything becomes lower case, common words and special characters are removed, words are reduced to their base form and finally the plots are split into individual tokens.
 
 Before preprocessing:
+
 “The Lemon Drop Kid , a New York City swindler, is illegally touting horses at a Florida racetrack.”
 
 After preprocessing:
+
 ['lemon', 'drop', 'kid', 'new', 'york', 'city', 'swindler', 'illegally', 'tout', 'horse', 'florida', 'racetrack']
 
 The steps above are also a great way to reduce the unique word count in the dataset. Before there were 386118 unique words an
