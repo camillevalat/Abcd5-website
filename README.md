@@ -71,7 +71,7 @@ As no surprise, English takes the center stage, standing as the undisputed leade
 
 Let’s also quickly examine the average scores associated with each of these top 10 languages.
 
-<div style="display: flex;">
+<div style="display: flex; align-items: center;">
     <img src="./assets/img/language_top10_score.png" width="60%" style="margin-right: 10px;" />
     <p>
         For now, we don’t observe a significant difference in average scores, especially among the top 5 languages.
