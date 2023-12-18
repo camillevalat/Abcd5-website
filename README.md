@@ -165,9 +165,8 @@ Our Game Plan:
 
 Are you ready to unlock the secret to perfect movie timing? Get ready to discover when each genre shines the brightest! 
 
-<div class="responsive-iframe-container">
-    <iframe src="./assets/img/genres_month_line_plot.html" allowfullscreen></iframe>
-</div>
+
+<iframe src="./assets/img/genres_month_line_plott.html" width="100%" height="600"></iframe>
 
 
 Action/Adventure takes the stage, captivating audiences with adrenaline-pumping tales in the sizzling months of June, July, and the festive December. Thriller aficionados, take note – the fourth month is your golden opportunity to shine, dominating the scene like never before. December is the month where Romantic Drama truly stands out among its peers. 
