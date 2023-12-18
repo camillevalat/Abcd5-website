@@ -124,7 +124,7 @@ Wouldn’t it be more insightful with some visual aids?
 Let’s take a look at the boxplots from both categories. Additionally,  histograms offer a more detailed view of the weighted score distributions.
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="./assets/img/language_boxplots.png" width="60%" />
+    <img src="./assets/img/language_boxplots.png" width="40%" />
     <img src="./assets/img/language_categories_distrib.png" width="60%" />
 </div>
 
