@@ -82,7 +82,9 @@ However, it gets intriguing when we seek to establish a connection between langu
 
 To achieve this, we build a heat map using data from the first 200 movies in our dataset. That allows us to gain insights into the distribution of languages across different countries, while maintaining a comprehensible heatmap, considering the complexity of analyzing our collection of about 55000 movies.
 
-![heatmap_lang](./assets/img/language_heatmap.png.jpg)
+<p align="center">
+  <img src="./assets/img/language_heatmap.png.jpg" alt="">
+</p>
 
 Once again, it comes that English reigns supreme as the most widely used language. Additionally, it’s evident that the majority of English-language films originate from the United State of America, followed by the United Kingdom.
 
