@@ -97,8 +97,8 @@ Once again, it comes that English reigns supreme as the most widely used languag
 
 Our initial foray into language analysis has provided us with a glimpse of the linguistic landscape in the world of cinema. As we’re aware, English is the most widely spoken language globally, so it begs the following question: what’s the impact of English usage on a movie’s success? 
 For this investigation, we categorized movies into 2 distinct groups:
-•	Category 1 : movies not in English (excluding those from  the USA or  the UK)
-•	Category 2 : the movies that are in at least English and 1 (any) other language (excluding those from  the USA or  the UK)
+- Category 1 : movies not in English (excluding those from  the USA or  the UK)
+- Category 2 : the movies that are in at least English and 1 (any) other language (excluding those from  the USA or  the UK)
 
 Before we proceed, brief notes:
 *   We've excluded movies from the USA and the UK since English is their primary language, and our earlier analysis revealed that most English-language movies originate from these 2 countries.
@@ -110,7 +110,22 @@ Before we proceed, brief notes:
 
 Now, let’s observe the basic descriptive statistics of these 2 categories.
 
+| head1     | Category 1   | Category 2 |
+|:----------|:-------------|:-----------|
+| count     |     1833     |     1833   |
+| std       |     15.5     |      18    |
+| mean      |      36      |      47    |
+| min       |     5.8      |     7.1    |
+| 50%       |      34      |      45    |
+| max       |      98      |     119    |
 
+
+Wouldn’t it be more insightful with some visual aids?
+Let’s take a look at the boxplots from both categories.
+
+<p>
+  <img src="./assets/img/language_boxplots.png" alt="">
+</p>
 
 ---
 
