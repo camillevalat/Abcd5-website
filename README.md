@@ -56,8 +56,12 @@ This implies that the distinct individual characters have a stronger influence o
 
 ## Unlocking the Universal Language of Movies
 
-In the vast world of cinema, language is more than just words, it is a bridge that connects diverse audiences, transcending borders and cultures. Why study the language feature of movies, you ask? Because language is the pulse of storytelling, an invisible yet pivotal force that shapes the experience on screen. We’re about to try to unveil the secrets of how language can elevate a film’s appeal and global reach.
-
+<div style="display: flex; align-items: center;">
+    <img src="./assets/img/universal_language.jpg" width="60%" style="margin-right: 10px;" />
+    <p>
+        In the vast world of cinema, language is more than just words, it is a bridge that connects diverse audiences, transcending borders and cultures. Why study the language feature of movies, you ask? Because language is the pulse of storytelling, an invisible yet pivotal force that shapes the experience on screen. We’re about to try to unveil the secrets of how language can elevate a film’s appeal and global reach.
+    </p>
+</div>
 
 Let’s dive right into that and start by exploring the 10 most frequently used languages.
 
