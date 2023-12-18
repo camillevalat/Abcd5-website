@@ -121,17 +121,15 @@ Now, let’s observe the basic descriptive statistics of these 2 categories.
 
 
 Wouldn’t it be more insightful with some visual aids?
-Let’s take a look at the boxplots from both categories.
+Let’s take a look at the boxplots from both categories. Additionally,  histograms offer a more detailed view of the weighted score distributions.
 
-<p>
-  <img src="./assets/img/language_boxplots.png" width="60%" >
-</p>
+<div style="display: flex; justify-content: space-between;">
+    <img src="./assets/img/language_boxplots.png" width="60%" />
+    <img src="./assets/img/language_categories_distrib.png" width="60%" />
+</div>
 
-Additionally,  histograms offer a more detailed view of the weighted score distributions.
+The visualizations and statistics clearly highlight a difference in the average weighted scores between the 2 categories. It appears that movies in category 2 (those in English) tend to have higher weighted scores. Now, let’s address the critical question: is this difference statistically significant?
 
-<p>
-  <img src="./assets/img/language_categories_distrib.png" width="60%" >
-</p>
 
 
 ---
