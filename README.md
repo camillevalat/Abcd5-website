@@ -230,7 +230,7 @@ The movieplot table consists of 2 columns. An ‘id’ column that serves as a r
 
 
 <p align="center">
-  <img src="./assets/img/plots-graph1.png" width="60%">
+  <img src="./assets/img/plots-graph1.png" width="70%">
 </p>
 
 It is more common to find short plots compared to longer ones which is evident in the histogram above. It seems that plots with a length between 0-999 characters are the most common, and the frequency rapidly declines as the length increases. Furthermore, the longest plot in the dataset is 28158 characters long.
@@ -288,7 +288,7 @@ the score based on the probability of words co-occuring in the dictionary of the
 The model above shows many overlapping and small topics, and it is therefore a good idea to create a model with less topics. The following is a plot showing various LDA models with different topic amounts and their C_v scores:
 
 <p align="center">
-  <img src="./assets/img/plots-graph2.png" width="60%">
+  <img src="./assets/img/plots-graph2.png" width="70%">
 </p>
 
 
@@ -319,7 +319,7 @@ First thing we can explore is to separate the successful movies from the rest an
 
 
 <p align="center">
-  <img src="./assets/img/plots-graph3.png" width="60%">
+  <img src="./assets/img/plots-graph3.png" width="70%">
 </p>
 
 
@@ -335,7 +335,7 @@ Seeing the precise proportion percentages between successful movies and the rest
 
 
 <p align="center">
-  <img src="./assets/img/plots-graph4.png" width="60%">
+  <img src="./assets/img/plots-graph4.png" width="70%">
 </p>
 
 Above we have plotted the top 1000 movies against the bottom 1000, and even here we see that the topic frequencies match very well. 
@@ -352,7 +352,7 @@ The average rating per topic also confirms that there are no particular topics t
 Another interesting thing to consider is if movies that are more concentrated on a single topic, and thus have a high dominant topic score, will have a higher rating. The intuition is that a more focused narrative might be more compelling for the viewer. We can explore this by doing a scatterplot between average rating and topic score:
 
 <p align="center">
-  <img src="./assets/img/plots-graph5.png" width="60%">
+  <img src="./assets/img/plots-graph5.png" width="70%">
 </p>
 
 It seems that there is no correlation between topic score and average rating. This means that a director can spread his movie plot across multiple topics without affecting his chance of success.
