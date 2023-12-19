@@ -281,9 +281,7 @@ What we are seeing are topics projected onto a 2D principal component space. Eac
 
 As you have probably noticed, the topics do not have a name and are only depicted by an id. However, the top term frequencies for a topic might give an indication of what that topic is about. Unfortunately it is not always clear, especially if many topics overlap. Thus, a better LDA model would create bigger and less overlapping clusters. In this case, there are many small and overlapping clusters meaning there is room for improvement. 
 
-You could look at the visualisation of an LDA model to judge how good it is, but another more precise way is to use coherence scores. A higher coherence score means more coherent and interpretable topics. There are multiple ways to measure coherence, but in this analysis we are using C_v coherence score which computes 
-
-the score based on the probability of words co-occuring in the dictionary of the dataset. The coherence score for the model above is: Cvscore = 0.2685.
+You could look at the visualisation of an LDA model to judge how good it is, but another more precise way is to use coherence scores. A higher coherence score means more coherent and interpretable topics. There are multiple ways to measure coherence, but in this analysis we are using C_v coherence score which computes the score based on the probability of words co-occuring in the dictionary of the dataset. The coherence score for the model above is: Cvscore = 0.2685.
 
 The model above shows many overlapping and small topics, and it is therefore a good idea to create a model with less topics. The following is a plot showing various LDA models with different topic amounts and their C_v scores:
 
