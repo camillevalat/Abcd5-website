@@ -12,6 +12,28 @@
 
 ---
 
+## Data Landscape
+
+
+Our analysis begins with the comprehensive CMU movie dataset, which includes data on 81,000 movies, 450,000 character entries, 72 character types, and 42,000 plot summaries. To enhance our anlysis, we integrated additional datasets :
+ 
+*   **IMDb Ratings**: Given that only 13% of the movies in our primary dataset provided revenue information, we needed a more robust metric for assessing a movie's success. Therefore, we incorporated IMDb movie ratings to provide a broader perspective.
+*   **Movie Budgets**: Understanding the financial aspect of movie production is crucial. To analyze the impact of budgets, we sourced a dataset from Kaggle that provides detailed budget information for a wide range of films.
+ 
+Defining the **success** of a movie required a thoughtful approach. We utilized the IMDb ratings, which offered two key metrics: an _average rating_ and a _number of votes_ for each movie. To create a comprehensive measure of success, we combined these two metrics into a _weighted score_, calculated as the _average rating_ * log(_number of votes_ + 1). This formula ensures that ratings with a higher number of votes have a greater influence on the movie's overall success score.
+
+As a preliminary step, we will present a visualization of the distribution of this _weighted score_ to set the foundation for our subsequent analysis.
+
+<p align="center">
+  <img src="./assets/img/score_distribution.png">
+</p>
+
+The analysis of the _weighted scores_ reveals a concentration of values primarily between 30 and 50. In this context, a score of approximately 20 would be considered below average, indicating a lesser degree of success, whereas a score nearing the 60 would signify a notably successful movie.
+
+
+---
+
+
 ## Unlocking the Universal Language of Movies
 
 <div style="display: flex; align-items: center;">
