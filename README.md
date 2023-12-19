@@ -7,7 +7,7 @@
 
 
 <p align="center">
-  <img src="./assets/img/background2.png" width="70%">
+  <img src="./assets/img/background3.png" width="70%">
 </p>
 
 ---
@@ -397,6 +397,11 @@ This implies that the distinct individual characters have a stronger influence o
 
 --- 
 
+<p align="center">
+  <img src="./assets/img/the-end.jpg" width="70%">
+</p>
+
+--- 
 
 #### Image references
 
