@@ -398,3 +398,8 @@ This implies that the distinct individual characters have a stronger influence o
 --- 
 
 
+#### Image references
+
+[1] "Universal Studios" by Ric e Ette is licensed under CC BY-NC-SA 2.0.
+
+
