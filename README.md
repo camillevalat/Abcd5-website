@@ -25,7 +25,7 @@ Defining the **success** of a movie required a thoughtful approach. We utilized 
 As a preliminary step, we will present a visualization of the distribution of this _weighted score_ to set the foundation for our subsequent analysis.
 
 <p align="center">
-  <img src="./assets/img/score_distribution.png">
+  <img src="./assets/img/score_distribution.png" width="60%">
 </p>
 
 The analysis of the _weighted scores_ reveals a concentration of values primarily between 30 and 50. In this context, a score of approximately 20 would be considered below average, indicating a lesser degree of success, whereas a score nearing the 60 would signify a notably successful movie.
