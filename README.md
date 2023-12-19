@@ -7,7 +7,7 @@
 
 
 <p align="center">
-  <img src="./assets/img/background2.png" alt="">
+  <img src="./assets/img/background2.png" width="70%">
 </p>
 
 ---
