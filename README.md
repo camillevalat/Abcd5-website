@@ -406,6 +406,9 @@ This implies that the distinct individual characters have a stronger influence o
 #### Image references
 
 [1] "The red way"  by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1293881">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1293881">Pixabay</a>
-[2] "Oscar" by RDNE Stock project: https://www.pexels.com/fr-fr/photo/nature-morte-objet-recompense-arriere-plan-rouge-7005696/
+
+[2] "Oscar" by RDNE Stock project from <a href="https://www.pexels.com/fr-fr/photo/nature-morte-objet-recompense-arriere-plan-rouge-7005696/">Pexels</a>
+
 [3] "Universal Studios" by Ric e Ette is licensed under CC BY-NC-SA 2.0.
+
 [4] "The end" by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=812226">Gerd Altmann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=812226">Pixabay</a>
