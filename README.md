@@ -68,7 +68,7 @@ However, it gets intriguing when we seek to establish a connection between langu
 To achieve this, we build a heat map using data from the first 200 movies in our dataset. That allows us to gain insights into the distribution of languages across different countries, while maintaining a comprehensible heatmap, considering the complexity of analyzing our collection of about 55000 movies.
 
 <p align="center">
-  <img src="./assets/img/language_heatmap.png" alt="">
+  <img src="./assets/img/language_heatmap.png">
 </p>
 
 
@@ -143,6 +143,10 @@ So, what's our final take on the script of language in movies? While English can
 
 Our advice to the filmmakers of tomorrow: Know your genre, know your audience. English can be a powerful tool, but it's not the only one in your cinematic toolbox. The key to a hit movie? It's knowing when to speak the language of your audience, in every sense of the word.
 
+<iframe src="./assets/img/char_name_visualization.html" width="100%"></iframe>
+
+### Exploring Character Appearance Effects 
+
 
 
 
@@ -151,23 +155,31 @@ Our advice to the filmmakers of tomorrow: Know your genre, know your audience. E
 
 ## The Name Effect
 
-We’ve all had the experience of watching a movie and being captivated by a certain character. Investigating the influence of a character on a movie's rating reveals the complex interactions taking place: their depth, relatability, and the charisma they bring to the screen. Their presence can sway the audience's perception, affecting the film's reception and success. To investigate this theory, the two main questions we shifted our focus towards were:
+We’ve all had the experience of watching a movie and being captivated by a certain character. Investigating the influence of a character on a movie's rating lets us see the effects of their relatability, and the charisma they bring to the screen. Their presence can sway the audience's perception, affecting the film's success. To investigate this theory, the two main questions we shifted our focus towards were:
 
-Does the number of instances a character name appears have any effect on a movie’s rating?
-And moreover, does the same character appearing in specifically a movie sequel have any effect on a movie’s rating?
+Does the number of instances a character name appears across movies have any effect on a movie’s rating? For example, we have multiple ‘Sherlock Holmes’ franchises. Will the fact that you liked Sherlock Holmes played by Roger Moore influence you to go and watch a different Sherlock Holmes movie played by Robert Downey Jr., and will it affect the rating you’ll give the latter?
 
-But before starting, enjoy the interactive visualisation of the number of movies each character has appeared in! (save as html)
+Additionally, does a character's appearance in a movie sequel impact its rating? In other words, if you enjoyed the initial portrayal of Sherlock Holmes by Robert Downey Jr. in the first movie, will that lead you to watch and rate the sequel positively as well?
 
-Character Names appearance number and Rating
-*   Png plot
-*   Write results
-  
-Which character names associate with which genre best?
-*   Write results
-  
-Do films with sequels have a higher weighted_score?
-*   Png plot
-*   While films with 2 sequences vary among their
+But before starting, enjoy the interactive visualisation of the number of movies each character has appeared in! 
+
+<p align="center">
+  <img src="./assets/img/char-graph6.png">
+</p>
+
+In our analysis, we started by calculating the average rating of movies that showcased specific characters. By averaging the scores attributed to each character's name, we gained insights into their impact on movie ratings. 
+Most characters tended to appear between one and four times across films. Yet, in rarer cases where a character's appearances were more frequent, we noticed a subtle increase in average IMDB ratings. This increase, ranging from approximately 68 to 80, became evident through our use of linear regression. These findings hint that a character's presence or popularity might subtly influence the overall rating of a movie.
+
+
+### How Sequels Shape Success
+
+<p align="center">
+  <img src="./assets/img/char-graph7.png">
+</p>
+
+In the subsequent part of the analysis, we assumed that if there is a character with the same name, and if it’s played by the same actor, the multiple apparition of this character name is due to its presence in movie sequels. Our focus was exclusively on movies that had at least two sequels. Interestingly, contrary to our earlier findings related to character names, our exploration using linear regression revealed a different trend this time. Movies having two sequels began with an average weighted score of approximately 75. However, as the number of sequels increased, we observed a decline in this average, dropping to 50.
+
+So what did we learn from these results?  Yes, having a character with a TV legacy can boost your movie's rating, however when it comes to sequels, it’s better not to be too greedy. It’s recommended to keep those sequels in check, maybe around three or four max, for a better prognosis on your movie's rating!
 
 
 ---
@@ -179,8 +191,48 @@ In this next phase, we're exploring the common character types and their potenti
 
 ### Character Type Hits and Misses
 
+<p align="center">
+  <img src="./assets/img/char-graph1.png">
+</p>
+
+We kicked things off by sorting our data by character types and getting into the specifics of the weighted scores these character types are seen in. One can identify character types that are generally more positively received (higher scores) or those that might need improvement (lower scores). The winners? They're the 'jerk_jock' and 'bully' characters. They're bringing in the highest scores, but they're not exactly known for their kindness. While the least two popular are women characters. Strangely enough, the lady with the most robust personality ends up with the lowest mean weighted score. Before we jump into the men versus women saga, let’s maybe take a look at how type preference differs across the two genders.
+
+### Does gender matter for character types?
+
+<p align="center">
+  <img src="./assets/img/char-graph2.png">
+</p>
+
+<p align="center">
+  <img src="./assets/img/char-graph3.png">
+</p>
+
+We see that our data has multiple character types corresponding to men, but only 7 types corresponding to women.
+The movie ratings with male types range approximately between 60 and 120, and this range is between 60 and 100 for movies with typical female characters. It seems that the guys bring an extra punch of 20 points to the table.
+While all types of adjectives are used for the male types, roughly half of the female types are described by words like ‘dumb’, ‘klutz’, and ‘prima donna’ ( the term usually carries connotations of someone who is demanding, temperamental, or difficult to work with). But the misogyny between  the male and female character archetypes is for another data story altogether… 
 
 
+### Unveiling the Hottest Character Types for specific genres
+
+|       Genre        |        Type        |  Weighted Score |
+|:-------------------|:-------------------|:----------------|
+| Drama              |  Gadgeteer Genius  |      133.6      |  
+| Time Travel        |  Bully             |      119.4      |
+| Historical Fiction |  Warrior Poet      |      104.8      |
+| Action Comedy      |  Retired Outlaw    |       77.8      |
+| Musical comedy     |  prima_donna       |       54.3      | 
+
+Our next step consisted of grouping the data according to the different genres and character types, and uncovering which combination gave the highest movie rating score. The table above only consists of 5 examples of our findings, more can be seen in the notebook. Dive into this table, and you'll find some interesting connections between the genres and the characters that outperform others. This table shows that sometimes the most unexpected character types become the stars in their own cinematic genres, rewriting the rules of on-screen charisma!
+
+
+### Are character names or character types more influential on weighted_score?
+
+
+Now that we have gone through the different effects character names and character types have on ratings, it's time for a ruling! Which one is more influential? Instead of looking at each character name or type as a single feature, and analyse multiple p-values at once, we decided to base our conclusion on the R-squared value. This value was 0.95 for character names and 0.57 for character types, meaning that characters explain more of the variance of the weighted score compared to the types.
+
+This implies that the distinct individual characters have a stronger influence on a film's score compared to the character types. It suggests that specific character identities might have a more apparent impact on a movie's rating in our dataset than the character types they represent.
+
+So the verdict? The data speaks for itself: individual character identities carry a greater weight in shaping a movie's rating in our dataset than the categories they belong to.
 
 
 ---
