@@ -173,6 +173,20 @@ Do films with sequels have a higher weighted_score?
 ---
 
 
+## Character Archetypes
+
+In this next phase, we're exploring the common character types and their potential impact on movie ratings. We're on the hunt to uncover whether the presence of certain character types correlates with fluctuations in movie ratings. 
+
+### Character Type Hits and Misses
+
+
+
+
+
+---
+
+
+
 ## Cracking the Code: When Should You Release Your Movie?
 
 We're on a mission to figure out the best time to launch a movie. Why? Because we're not just aiming for success; we're aiming for the very best kind. And to crack this secret code, we're diving deep into the world of movie release timing.
@@ -372,25 +386,6 @@ So for now, our conclusions mean that you can create a movie on any topic and no
 
 
 ----
-
-## Trope/Type
-
-For this next part, we look into typical character types, and if their presence has any effect on movie ratings. By analysing ….
-
-*   Which types are most and least popular
-    * We started by grouping the data by character type and calculating the mean of their weighted scores. One can identify character types that are generally more positively received (higher scores) or those that might need improvement (lower scores). In this analysis, the two highest scores correspond to meaner, more aggressive characters. While the least two popular are women characters. Specifically, the type with the lowest mean weighted score is a woman character with a stronger character. Let’s see how trends differ when we separate the men and women types?
-
-*   Does this trend change based on whether the type is a man or a woman?
-    * We see that our data has multiple character types corresponding to men, but only 7 types corresponding to women.
-
-*   Which type is more popular for a specific genre (?)
-    * Write results
-
-*   Are character names or character types more influential on weighted_score?
-    * Now that we have gone through the different effects character names and character types have on ratings, it's time for a verdict! Which one is more influential? Instead of looking at each character name or type as a single feature, and analyse multiple p-values at once, we decided to base our conclusion on the R-squared value. This value was 0.95 for character names and 0.57 for character types, meaning that characters explain more of the variance of the weighted score compared to the types.  
-This implies that the distinct individual characters have a stronger influence on a film's score compared to the character types. It suggests that specific character identities might have a more apparent impact on a movie's rating in our dataset than the character types they represent.
-
---- 
 
 <p align="center">
   <img src="./assets/img/the-end.jpg" width="80%">
