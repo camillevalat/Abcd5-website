@@ -34,120 +34,6 @@ The analysis of the _weighted scores_ reveals a concentration of values primaril
 ---
 
 
-## Unlocking the Universal Language of Movies
-
-<div style="display: flex; align-items: center;">
-    <img src="./assets/img/universal_lang.png" width="40%" style="margin-right: 10px;" />
-    <p>
-        In the vast world of cinema, language is more than just words, it is a bridge that connects diverse audiences, transcending borders and cultures. Why study the language feature of movies, you ask? Because language is the pulse of storytelling, an invisible yet pivotal force that shapes the experience on screen. We’re about to try to unveil the secrets of how language can elevate a film’s appeal and global reach.
-    </p>
-</div>
-
-
-Let’s dive right into that and start by exploring the 10 most frequently used languages.
-
-
-<div style="display: flex; justify-content: space-between;">
-    <img src="./assets/img/language_count_top10.png" width="50%" />
-    <img src="./assets/img/language_top10_pie.png" width="50%" />
-</div>
-
-As no surprise, English takes the center stage, standing as the undisputed leader.
-
-Let’s also quickly examine the average scores associated with each of these top 10 languages.
-
-<div style="display: flex; align-items: center;">
-    <img src="./assets/img/language_top10_score.png" width="60%" style="margin-right: 10px;" />
-    <p>
-        For now, we don’t observe a significant difference in average scores, especially among the top 5 languages.
-    </p>
-</div>
-
-However, it gets intriguing when we seek to establish a connection between language and a movie’s country of origin.
-
-To achieve this, we build a heat map using data from the first 200 movies in our dataset. That allows us to gain insights into the distribution of languages across different countries, while maintaining a comprehensible heatmap, considering the complexity of analyzing our collection of about 55000 movies.
-
-<p align="center">
-  <img src="./assets/img/language_heatmap.png">
-</p>
-
-
-
-Once again, it comes that English reigns supreme as the most widely used language. Additionally, it’s evident that the majority of English-language films originate from the United State of America, followed by the United Kingdom.
-
-### And what now?
-
-Our initial foray into language analysis has provided us with a glimpse of the linguistic landscape in the world of cinema. As we’re aware, English is the most widely spoken language globally, so it begs the following question: what’s the impact of English usage on a movie’s success? 
-For this investigation, we categorized movies into 2 distinct groups:
-- Category 1 : movies not in English (excluding those from  the USA or  the UK)
-- Category 2 : the movies that are in at least English and 1 (any) other language (excluding those from  the USA or  the UK)
-
-Before we proceed, brief notes:
->*  We've excluded movies from the USA and the UK since English is their primary language, and our earlier analysis revealed that most English-language movies originate from these 2 countries.
->*   In Category 2, we've set the condition of including English and at least one other language to exclude movies from countries where English is the primary language (e.g., Canada)
->*   Our dataset comprises 20,625 movies in Category 1 and 1,833 in Category 2. To ensure a fair comparison, we've randomly selected 1,833 movies from Category 1 for our future analysis
-
-
-
-Now, let’s observe the basic descriptive statistics of these 2 categories.
-
-|           | Category 1   | Category 2 |
-|:----------|:-------------|:-----------|
-| count     |     1833     |     1833   |
-| std       |     15.5     |      18    |
-| mean      |      36      |      47    |
-| min       |     5.8      |     7.1    |
-| 50%       |      34      |      45    |
-| max       |      98      |     119    |
-
-
-Wouldn’t it be more insightful with some visual aids?
-Let’s take a look at the boxplots from both categories. Additionally,  histograms offer a more detailed view of the weighted score distributions.
-
-<div style="display: flex; justify-content: space-between;">
-    <img src="./assets/img/language_boxplots.png" width="40%" />
-    <img src="./assets/img/language_categories_distrib.png" width="60%" />
-</div>
-
-The visualizations and statistics clearly highlight a difference in the average weighted scores between the 2 categories. It appears that movies in category 2 (those in English) tend to have higher weighted scores. Now, let’s address the _critical question_ : is this difference statistically significant?
-
-### A Significant Difference? 
-
-To assess the significance of this difference, we chose the Mann-Whitney U test. This test is suitable because it assumes non-normal but similar shapes in the distributions, while remaining robust to small variations – precisely the characteristics we can identify in our 2 categories. 
-
-The results of the test are telling. With a p-value significantly under 0.05, the conclusion is clear: the difference in weighted scores is statistically significant.
-
-But significance is only one part of the story. Understanding the strength of the relation is equally important. To quantify this, we computed the rank-biserial correlation and found a correlation of 0.352.
-
-The positive sign of this result confirms that movies from category 2 (in English) tend to have higher ratings compared to movies from category 1 (not in English).
-The value of 0.352, notably higher than 0, underscores English’s positive effect on movie’s score. 
-To delve deeper, we conducted a subgroup analysis with the genre. We chose the genre feature, given the vast diversity within the movie industry and the distinct audiences attracted by different genres.
-
-
-### Subgroup analysis
-
-Each genre underwent the Mann-Whitney U test, mirroring our intial approach. The aim? To discern whether the positive trend we observed with English language movies held consistent across various film genres or if there were specific categories where the impact of English was more or less pronounced. This genre-specific analysis was important for adding depth to our understanding, preventing overgeneralization of English’s influence, and acknowledging the unique characteristics that different movie genres bring to the cinematic landscape.
-
-And here, the results opposed what we have found until now. Among 244 genres, only 34 exhibited a significant English impact. And here's the surprise – within these, the link between English and higher scores was often negative. 
-
-This contrasting results within individual genres versus the aggregated dataset is indicative of Simpson's Paradox. How to read that? While certain genres with a larger number of movies might benefit significantly from English availability, influencing the overall positive correlation, many genres do not follow this trend and may even experience an inverse effect.
-
-
-
-### Conclusion
-
-
-In our quest to decode the impact of English in the cinematic universe, we stumbled upon a narrative full of twists and turns. Our initial findings painted a straightforward story: English boosts movie scores. But when we zoomed into the world of genres, the plot thickened.
-
-So, what's our final take on the script of language in movies? While English can be a star performer, lighting up the screen for certain genres, it's not a universal script for success. Take 'Monster' movies, where English roars with a strong positive correlation of 0.88. Here, English might be your ticket to blockbuster status. But flip the script to 'Indie' or 'Bollywood', and you'll find a starkly different tale, with significant negative correlations (r= -0.57 and r= -0.52). In these realms, relying on English might not be the best directorial choice.
-
-Our advice to the filmmakers of tomorrow: know your genre, know your audience. English can be a powerful tool, but it's not the only one in your cinematic toolbox. The key to a hit movie? It's knowing when to speak the language of your audience, in every sense of the word.
-
-
-
----
-
-
 ## The Name Effect
 
 We’ve all had the experience of watching a movie and being captivated by a certain character. Investigating the influence of a character on a movie's rating lets us see the effects of their relatability, and the charisma they bring to the screen. Their presence can sway the audience's perception, affecting the film's success. To investigate this theory, the two main questions we shifted our focus towards were:
@@ -232,6 +118,113 @@ Now that we have gone through the different effects character names and characte
 This implies that the distinct individual characters have a stronger influence on a film's score compared to the character types. It suggests that specific character identities might have a more apparent impact on a movie's rating in our dataset than the character types they represent.
 
 So the verdict? The data speaks for itself: individual character identities carry a greater weight in shaping a movie's rating in our dataset than the categories they belong to.
+
+
+---
+
+## Unlocking the Universal Language of Movies
+
+<div style="display: flex; align-items: center;">
+    <img src="./assets/img/universal_lang.png" width="40%" style="margin-right: 10px;" />
+    <p>
+        In the vast world of cinema, language is more than just words, it is a bridge that connects diverse audiences and cultures. Why study the language feature of movies? Because language is the heart of storytelling, an invisible yet crucial aspect that shapes the experience on screen. We’re about to try to unveil the secrets of how language can elevate a film’s appeal and global reach.
+    </p>
+</div>
+
+
+Let’s dive right into that and start by exploring the 10 most frequently used languages.
+
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="./assets/img/language_count_top10.png" width="50%" />
+    <img src="./assets/img/language_top10_pie.png" width="50%" />
+</div>
+
+As no surprise, English takes the center stage, standing as the leader.
+
+Let’s also quickly examine the average scores associated with each of these top 10 languages.
+
+<div style="display: flex; align-items: center;">
+    <img src="./assets/img/language_top10_score.png" width="60%" style="margin-right: 10px;" />
+    <p>
+        For now, we don’t observe a significant difference in average scores, especially among the top 5 languages.
+    </p>
+</div>
+
+However, it gets intriguing when we try to establish a connection between language and a movie’s country of origin.
+
+To achieve this, we build a heat map using data from the first 200 movies in our dataset. That allows us to gain insights into the distribution of languages across different countries, while maintaining a comprehensible heatmap, given the complexity of analyzing our collection of about 55000 movies.
+
+<p align="center">
+  <img src="./assets/img/language_heatmap.png">
+</p>
+
+Once again, it comes that English is the most widely used language. Additionally, it shows that the majority of English-language films originate from the United State of America, followed by the United Kingdom.
+
+
+### And what now?
+
+Our initial foray into language analysis has provided us with a glimpse of the linguistic landscape in the world of cinema. As we’re aware, English is the most widely spoken language globally, so it begs the following question: what’s the impact of English usage on a movie’s success? 
+For this investigation, we categorized movies into 2 distinct groups:
+- Category 1 : movies not in English (excluding those from  the USA or  the UK)
+- Category 2 : the movies that are in at least English and 1 (any) other language (excluding those from  the USA or  the UK)
+
+Before we proceed, brief notes:
+>*  We've excluded movies from the USA and the UK since English is their primary language, and our earlier analysis revealed that most English-language movies originate from these 2 countries.
+>*   In Category 2, we've set the condition of including English and at least one other language to exclude movies from countries where English is the primary language (e.g., Canada)
+>*   Our dataset comprises 20,625 movies in Category 1 and 1,833 in Category 2. To ensure a fair comparison, we've randomly selected 1,833 movies from Category 1 for our future analysis
+
+Now, let’s observe the basic descriptive statistics of these 2 categories.
+
+|           | Category 1   | Category 2 |
+|:----------|:-------------|:-----------|
+| count     |     1833     |     1833   |
+| std       |     15.5     |      18    |
+| mean      |      36      |      47    |
+| min       |     5.8      |     7.1    |
+| 50%       |      34      |      45    |
+| max       |      98      |     119    |
+
+
+Wouldn’t it be more insightful with some visual aids?
+Let’s take a look at the boxplots from both categories. Additionally,  histograms offer a more detailed view of the weighted score distributions.
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="./assets/img/language_boxplots.png" width="40%" />
+    <img src="./assets/img/language_categories_distrib.png" width="60%" />
+</div>
+
+The visualizations and statistics clearly highlight a difference in the average weighted scores between the 2 categories. It appears that movies in category 2 (those in English) tend to have higher weighted scores. Now, let’s address the _critical question_ : is this difference statistically significant?
+
+### A Significant Difference? 
+
+To assess the significance of this difference, we chose the Mann-Whitney U test. This test is suitable because it assumes non-normal but similar shapes in the distributions, while remaining robust to small variations – precisely the characteristics we can identify in our 2 categories. 
+
+The results of the test are telling. With a p-value significantly under 0.05, the conclusion is clear: the difference in weighted scores is statistically significant.
+
+But significance is only one part of the story. Understanding the strength of the relation is equally important. To quantify this, we computed the rank-biserial correlation and found a correlation of 0.352.
+
+The positive sign of this result confirms that movies from category 2 (in English) tend to have higher ratings compared to movies from category 1 (not in English).
+The value of 0.352, notably higher than 0, underscores English’s positive effect on movie’s score. 
+To delve deeper, we conducted a subgroup analysis with the genre. We chose the genre feature, given the vast diversity within the movie industry and the distinct audiences attracted by different genres.
+
+
+### Subgroup analysis
+
+Each genre underwent the Mann-Whitney U test, mirroring our intial approach. The aim? To discern whether the positive trend we observed with English language movies held consistent across various film genres or if there were specific categories where the impact of English was more or less pronounced. This genre-specific analysis was important for adding depth to our understanding, preventing overgeneralization of English’s influence, and acknowledging the unique characteristics that different movie genres bring to the cinematic landscape.
+
+And here, the results opposed what we have found until now. Among 244 genres, only 34 exhibited a significant English impact. And here's the surprise – within these, the link between English and higher scores was often negative. 
+
+This contrasting results within individual genres versus the aggregated dataset is indicative of Simpson's Paradox. How to read that? While certain genres with a larger number of movies might benefit significantly from English availability, influencing the overall positive correlation, many genres do not follow this trend and may even experience an inverse effect.
+
+
+### Conclusion
+
+In our quest to decode the impact of English in the cinematic universe, we stumbled upon a narrative full of twists and turns. Our initial findings painted a straightforward story: English boosts movie scores. But when we zoomed into the world of genres, the plot thickened.
+
+So, what's our final take on the script of language in movies? While English can be a star performer, lighting up the screen for certain genres, it's not a universal script for success. Take 'Monster' movies, where English roars with a strong positive correlation of 0.88. Here, English might be your ticket to blockbuster status. But flip the script to 'Indie' or 'Bollywood', and you'll find a starkly different tale, with significant negative correlations (r= -0.57 and r= -0.52). In these realms, relying on English might not be the best directorial choice.
+
+Our advice to the filmmakers of tomorrow: know your genre, know your audience. English can be a powerful tool, but it's not the only one in your cinematic toolbox. The key to a hit movie? It's knowing when to speak the language of your audience, in every sense of the word.
 
 
 ---
