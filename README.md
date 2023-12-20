@@ -141,12 +141,7 @@ In our quest to decode the impact of English in the cinematic universe, we stumb
 
 So, what's our final take on the script of language in movies? While English can be a star performer, lighting up the screen for certain genres, it's not a universal script for success. Take 'Monster' movies, where English roars with a strong positive correlation of 0.88. Here, English might be your ticket to blockbuster status. But flip the script to 'Indie' or 'Bollywood', and you'll find a starkly different tale, with significant negative correlations (r= -0.57 and r= -0.52). In these realms, relying on English might not be the best directorial choice.
 
-Our advice to the filmmakers of tomorrow: Know your genre, know your audience. English can be a powerful tool, but it's not the only one in your cinematic toolbox. The key to a hit movie? It's knowing when to speak the language of your audience, in every sense of the word.
-
-<iframe src="./assets/img/char_name_visualization.html" width="100%"></iframe>
-
-### Exploring Character Appearance Effects 
-
+Our advice to the filmmakers of tomorrow: know your genre, know your audience. English can be a powerful tool, but it's not the only one in your cinematic toolbox. The key to a hit movie? It's knowing when to speak the language of your audience, in every sense of the word.
 
 
 
@@ -162,6 +157,10 @@ Does the number of instances a character name appears across movies have any eff
 Additionally, does a character's appearance in a movie sequel impact its rating? In other words, if you enjoyed the initial portrayal of Sherlock Holmes by Robert Downey Jr. in the first movie, will that lead you to watch and rate the sequel positively as well?
 
 But before starting, enjoy the interactive visualisation of the number of movies each character has appeared in! 
+
+<iframe src="./assets/img/char_name_visualization.html" width="100%" height="600"></iframe>
+
+### Exploring Character Appearance Effects 
 
 <p align="center">
   <img src="./assets/img/char-graph6.png">
