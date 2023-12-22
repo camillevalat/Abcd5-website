@@ -3,7 +3,7 @@
 
 # 🍀 Get Ready 🍀
 
-**Writers! Directors! Producers!** Are you ready to embark on a journey to find out all the tips and tricks on how to make a great movie? Our pursuit resembles crafting a ‘cheat sheet’ —a thorough manual— that aims to unravel the necessary elements to create a _truly exceptional_ film that will leave its marks on viewers. Throughout this expedition, you will get a taste of a variety of factors which impact a movie's IMDB rating. Whether it’s the release date or the languages the movie was translated to, we didn’t leave a single stone unturned! Shall we get started?
+**Writers! Directors! Producers!** Are you ready to embark on a journey to find out all the tips and tricks on how to make a great movie? Our pursuit resembles crafting a ‘cheat sheet’ —a thorough manual— that aims to unravel the necessary elements to create a _truly exceptional_ film that will leave its marks on viewers. Throughout this expedition, you will get a taste of a variety of factors which impact a movie's success. Whether it’s the release date or the languages the movie was translated to, we didn’t leave a single stone unturned! Shall we get started?
 
 
 <p align="center">
@@ -19,8 +19,8 @@ Our analysis begins with the CMU movie dataset, which includes data on 81,000 mo
  
 *   **IMDb Ratings**: Given that only 13% of the movies in our primary dataset provided revenue information, we needed a more robust metric for assessing a movie's success. Therefore, we incorporated IMDb movie ratings to provide a broader perspective.
 *   **Movie Budgets**: Understanding the financial aspect of movie production is crucial. To analyze the impact of budgets, we sourced a dataset from Kaggle that provides detailed budget information for a wide range of films.
- 
-Defining the **success** of a movie required a thoughtful approach. We utilized the IMDb ratings, which offered two key metrics: an _average rating_ and a _number of votes_ for each movie. To create a comprehensive measure of success, we combined these two metrics into a _weighted score_, calculated as the _average rating_ * log(_number of votes_ + 1). This formula ensures that ratings with a higher number of votes have a greater influence on the movie's overall success score.
+
+Defining the **success** of a movie is the initial step. We used the IMDb ratings, which offered two key metrics: an _average rating_ and a _number of votes_ for each movie. To create a comprehensive measure of success, we combined these two metrics into a _weighted score_, calculated as the _average rating_ * log(_number of votes_ + 1). This formula ensures that ratings with a higher number of votes have a greater influence on the movie's overall success score.
 
 As a preliminary step, we will present a visualization of the distribution of this _weighted score_ to set the foundation for our subsequent analysis.
 
