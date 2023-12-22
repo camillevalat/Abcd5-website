@@ -15,7 +15,7 @@
 ## Data Landscape
 
 
-Our analysis begins with the comprehensive CMU movie dataset, which includes data on 81,000 movies, 450,000 character entries, 72 character types, and 42,000 plot summaries. To enhance our anlysis, we integrated additional datasets :
+Our analysis begins with the CMU movie dataset, which includes data on 81,000 movies, 450,000 character entries, 72 character types, and 42,000 plot summaries. To enhance our anlysis, we integrated additional datasets :
  
 *   **IMDb Ratings**: Given that only 13% of the movies in our primary dataset provided revenue information, we needed a more robust metric for assessing a movie's success. Therefore, we incorporated IMDb movie ratings to provide a broader perspective.
 *   **Movie Budgets**: Understanding the financial aspect of movie production is crucial. To analyze the impact of budgets, we sourced a dataset from Kaggle that provides detailed budget information for a wide range of films.
@@ -53,6 +53,7 @@ But before starting, enjoy the interactive visualisation of the number of movies
 </p>
 
 In our analysis, we started by calculating the average rating of movies that showcased specific characters. By averaging the scores attributed to each character's name, we gained insights into their impact on movie ratings. 
+
 Most characters tended to appear between one and four times across films. Yet, in rarer cases where a character's appearances were more frequent, we noticed a subtle increase in average IMDB ratings. This increase, ranging from approximately 68 to 80, became evident through our use of linear regression. These findings hint that a character's presence or popularity might subtly influence the overall rating of a movie.
 
 
@@ -127,7 +128,7 @@ So the verdict? The data speaks for itself: individual character identities carr
 <div style="display: flex; align-items: center;">
     <img src="./assets/img/universal_lang.png" width="40%" style="margin-right: 10px;" />
     <p>
-        In the vast world of cinema, language is more than just words, it is a bridge that connects diverse audiences and cultures. Why study the language feature of movies? Because language is the heart of storytelling, an invisible yet crucial aspect that shapes the experience on screen. We’re about to try to unveil the secrets of how language can elevate a film’s appeal and global reach.
+        In the vast world of cinema, language is more than just words, it is a bridge that connects diverse audiences and cultures. Why study the language feature of movies? Because language is the heart of storytelling, influencing the experience on screen. We’re about to try to unveil the secrets of how language can elevate a film’s appeal and global reach.
     </p>
 </div>
 
@@ -140,7 +141,7 @@ Let’s dive right into that and start by exploring the 10 most frequently used 
     <img src="./assets/img/language_top10_pie.png" width="50%" />
 </div>
 
-As no surprise, English takes the center stage, standing as the leader.
+As no surprise, English is, and by far, the leader.
 
 Let’s also quickly examine the average scores associated with each of these top 10 languages.
 
@@ -151,7 +152,7 @@ Let’s also quickly examine the average scores associated with each of these to
     </p>
 </div>
 
-However, it gets intriguing when we try to establish a connection between language and a movie’s country of origin.
+It gets interesting when we try to establish a connection between language and a movie’s country of origin.
 
 To achieve this, we build a heat map using data from the first 200 movies in our dataset. That allows us to gain insights into the distribution of languages across different countries, while maintaining a comprehensible heatmap, given the complexity of analyzing our collection of about 55000 movies.
 
@@ -164,7 +165,7 @@ Once again, it comes that English is the most widely used language. Additionally
 
 ### And what now?
 
-Our initial foray into language analysis has provided us with a glimpse of the linguistic landscape in the world of cinema. As we’re aware, English is the most widely spoken language globally, so it begs the following question: what’s the impact of English usage on a movie’s success? 
+Our initial language analysis has provided us with a glimpse of the linguistic landscape in the world of cinema. English is the most widely spoken language globally, so it begs the following question: what’s the impact of English usage on a movie’s success? 
 For this investigation, we categorized movies into 2 distinct groups:
 - Category 1 : movies not in English (excluding those from  the USA or  the UK)
 - Category 2 : the movies that are in at least English and 1 (any) other language (excluding those from  the USA or  the UK)
@@ -186,7 +187,7 @@ Now, let’s observe the basic descriptive statistics of these 2 categories.
 | max       |      98      |     119    |
 
 
-Wouldn’t it be more insightful with some visual aids?
+Wouldn’t it be better with some visual aids?
 Let’s take a look at the boxplots from both categories. Additionally,  histograms offer a more detailed view of the weighted score distributions.
 
 <div style="display: flex; justify-content: space-between;">
@@ -194,7 +195,7 @@ Let’s take a look at the boxplots from both categories. Additionally,  histogr
     <img src="./assets/img/language_categories_distrib.png" width="60%" />
 </div>
 
-The visualizations and statistics clearly highlight a difference in the average weighted scores between the 2 categories. It appears that movies in category 2 (those in English) tend to have higher weighted scores. Now, let’s address the _critical question_ : is this difference statistically significant?
+These visualizations and statistics clearly highlight a difference in the average weighted scores between the 2 categories. It appears that movies in category 2 (those in English) tend to have higher weighted scores. Now, let’s address the _critical question_ : is this difference statistically significant?
 
 ### A Significant Difference? 
 
@@ -211,7 +212,7 @@ To delve deeper, we conducted a subgroup analysis with the genre. We chose the g
 
 ### Subgroup analysis
 
-Each genre underwent the Mann-Whitney U test, mirroring our intial approach. The aim? To discern whether the positive trend we observed with English language movies held consistent across various film genres or if there were specific categories where the impact of English was more or less pronounced. This genre-specific analysis was important for adding depth to our understanding, preventing overgeneralization of English’s influence, and acknowledging the unique characteristics that different movie genres bring to the cinematic landscape.
+Each genre underwent the Mann-Whitney U test, mirroring our initial approach. The aim is to discern whether the positive trend we observed with English language movies held consistent across various film genres or if there were specific categories where the impact of English was more or less pronounced. This genre-specific analysis was important for adding depth to our understanding, preventing overgeneralization of English’s influence, and acknowledging the unique characteristics that different movie genres bring to the cinematic landscape.
 
 And here, the results opposed what we have found until now. Among 244 genres, only 34 exhibited a significant English impact. And here's the surprise – within these, the link between English and higher scores was often negative. 
 
@@ -222,10 +223,9 @@ This contrasting results within individual genres versus the aggregated dataset 
 
 In our quest to decode the impact of English in the cinematic universe, we stumbled upon a narrative full of twists and turns. Our initial findings painted a straightforward story: English boosts movie scores. But when we zoomed into the world of genres, the plot thickened.
 
-So, what's our final take on the script of language in movies? While English can be a star performer, lighting up the screen for certain genres, it's not a universal script for success. Take 'Monster' movies, where English roars with a strong positive correlation of 0.88. Here, English might be your ticket to blockbuster status. But flip the script to 'Indie' or 'Bollywood', and you'll find a starkly different tale, with significant negative correlations (r= -0.57 and r= -0.52). In these realms, relying on English might not be the best directorial choice.
+So, what's our final take on the script of language in movies? While English can be a star performer, lighting up the screen for certain genres, it's not a universal script for success. Take 'Monster' movies, where English comes with a strong positive correlation of 0.88. Here, English might be your ticket to blockbuster status. But flip the script to 'Indie' or 'Bollywood', and you'll find a different tale, with significant negative correlations (r= -0.57 and r= -0.52). In these realms, relying on English might not be the best directorial choice.
 
-Our advice to the filmmakers of tomorrow: know your genre, know your audience. English can be a powerful tool, but it's not the only one in your cinematic toolbox. The key to a hit movie? It's knowing when to speak the language of your audience, in every sense of the word.
-
+Our advice to the filmmakers of tomorrow: know your genre, know your audience. English can be a powerful tool, but it's not the only one in your cinematic toolbox.
 
 ---
 
@@ -233,15 +233,15 @@ Our advice to the filmmakers of tomorrow: know your genre, know your audience. E
 
 ## Cracking the Code: When Should You Release Your Movie?
 
-We're on a mission to figure out the best time to launch a movie. Why? Because we're not just aiming for success; we're aiming for the very best kind. And to crack this secret code, we're diving deep into the world of movie release timing.
+We're on a mission to figure out the best time to launch a movie. Why? Because we are not just aiming for success, we are aiming for the very best kind. And to crack this secret code, we're diving deep into the world of movie release timing.
 
 Our Game Plan:
 
-*  Looking at Each Type: We're not treating all movies the same. Nope! We're looking at each type or "genre" because each one has its own perfect time to shine.
+*  Looking at each type: we are not treating all movies the same. Instead, we are looking at each genre, because each one has its own perfect time to shine.
 
-*  Average Check: Armed with numbers, we're going to figure out the average performance for each genre in every month. This way, we can spot patterns and find out when each genre likes to do its best.
+*  Average check: armed with numbers, we are going to figure out the average performance for each genre in every month. This way, we can spot patterns and find out when each genre likes to do its best.
 
-*  Top 20 Only: We're not looking at every type of movie out there. Nope, that would take forever! We're focusing on the top 20 most liked genres. These are the big players in the movie world.
+*  Top 20 only: We are not looking at every type of movie out there. Because our dataset is quite large, we are focusing on the top 20 most liked genres. These are the big players in the movie world.
 
 Are you ready to unlock the secret to perfect movie timing? Get ready to discover when each genre shines the brightest! 
 
@@ -249,16 +249,17 @@ Are you ready to unlock the secret to perfect movie timing? Get ready to discove
 <iframe src="./assets/img/genres_month_line_plot.html" width="100%" height="600"></iframe>
 
 
-Action/Adventure takes the stage, captivating audiences with adrenaline-pumping tales in the sizzling months of June, July, and the festive December. Thriller aficionados, take note – the fourth month is your golden opportunity to shine, dominating the scene like never before. December is the month where Romantic Drama truly stands out among its peers. 
-And for those moments when you find yourself in the midst of creative indecision, fear not! We've got your back with the ultimate cheat sheet. Across all months, the top three genres that consistently steal the spotlight are Action/Adventure, Thriller, and Mystery. These genres seem to have the Midas touch, bringing success no matter the season.
+As we can see, Action/Adventure takes the stage, captivating audiences in the months of June, July, and December. Thriller lovers, July seems to be your golden opportunity to shine. December is the month where Romantic Drama truly stands out among its peers. 
 
+And for those moments when one can be in the midst of creative indecision, here is the ultimate cheat sheet. Across all months, the top three genres that consistently steal the spotlight are Action/Adventure, Thriller, and Mystery. These genres seem, in average, to bring success no matter the season.
 
-Now, let's talk about timing. If you're aiming for those chart-topping moments, mark your calendar for June, September, and December. These months stand tall as the shining stars of cinematic success, promising the perfect backdrop for your movie to dazzle and captivate audiences.
-So, whether you're navigating the labyrinth of genres or pondering the calendar months, remember these top picks. It's not just about making a movie; it's about making the right moves at the right time. Lights, camera, action – let the magic unfold!
+Now, let's talk about timing. If you are aiming for those chart-topping moments, mark your calendar for June, September, and December. These months stand tall as the shining stars of cinematic success, promising the perfect backdrop for your movie to captivate audiences.
 
-(fun fact)
+So, whether you're navigating the labyrinth of genres or pondering the calendar months, remember these top picks. It is not just about making a movie, it is about making the right moves at the right time. 
 
-We've curated a special treat just for you – a graph that unveils the fascinating journey of genres over time. Dive into the enchanting realm of filmmaking and witness the ebb and flow of genres, a delightful nugget of insight for all you moviemakers out there. Because understanding the past is the key to crafting a mesmerizing future in the world of cinema! 
+### fun fact
+
+We have an interactive graph that unveils the journey of genres over time. Because understanding the past is the key to crafting a mesmerizing future in the world of cinema! 
 
 <iframe src="./assets/img/avg_ratings-plot.html" width="100%" height="600"></iframe>
 
@@ -426,8 +427,96 @@ So for now, our conclusions mean that you can create a movie on any topic and no
 
 ## Budgets
 
+Welcome aboard, investors! You're about to explore the world of movie budgeting. Ready to see how smart investments in the film industry can turn into box office gold? Let's decode the budgeting secrets.
+Our dive into budget data reveals a crucial lesson: it's not about how much you spend, but how you spend it. Smart allocation can make the difference between a blockbuster and a bust. It's about striking that perfect balance between various production aspects.
+
+### Trends in Movie Budgets Over Time
+
+The film industry has witnessed a remarkable transformation over the decades. One of the most telling indicators of this evolution is the trend in movie budgets. This journey delves into how movie budgets have changed over time, painting a picture of an industry that's constantly pushing its financial frontiers.
+
+<p align="center">
+  <img src="./assets/img/budget-graph1.png" width="60%">
+</p>
+
+In the initial frames of our analysis, we encounter a period of modesty and constraint. Prior to the 1980s, the world of cinema was marked by relatively low and less variable budgets. This era reflects a time when the industry was perhaps more restrained, both in terms of financial resources and the scope of cinematic ambitions.
+
+As we move into the era of the 1980s, the plot takes a turn. Our scatter plot reveals a significant uptick in movie budgets. This period marks the onset of an era where the scales of movie production expanded, mirroring the growing appetite for more ambitious cinematic experiences.
+
+Alongside the rising budgets, we observe an intriguing subplot: an increase in the variability of these budgets. This trend points to a diversifying industry, where films range from modest indie projects to colossal blockbusters. The hexbin plot further illustrates this, highlighting the growing density of movie productions over time, especially post-1980s.
+
+<p align="center">
+  <img src="./assets/img/budget-graph2.png" width="60%">
+</p>
+
+While our hexbin plots offer a panoramic view of budget trends, they do not provide precise and quantifiable insights. Given this limitation, we introduce linear regression into our analysis, aiming to quantify and better understand these budgetary trends.
 
 
+### Behind the Curtain of Movie Economics
+
+In the cinematic realm, the alchemy of transforming a budget into a successful movie is a tale as old as the industry itself. The question of whether financial heft translates to critical acclaim takes center stage in our analysis. We focus on the relationship between a movie's budget and its weighted score to unravel this enigma.
+
+<p align="center">
+  <img src="./assets/img/budget-graph3.png" width="60%">
+</p>
+
+The scatter plot lays out the vast landscape of our inquiry, where each dot represents a movie's financial blueprint against its artistic reception. As we follow the red thread of the linear regression line, we see the narrative of the budget's influence begin to unfold. This line suggests a positive correlation: more money might hint at a higher rating.
+
+The Pearson Correlation Coefficient, at a modest 0.307, plays a faint symphony—it whispers of a relationship between budget and score that exists, yet doesn't shout. It's a delicate dance between dollars and stars, where the step of one lightly influences the twirl of the other, suggesting that while bigger budgets are often associated with higher scores, the bond is not one of destiny, but rather, of gentle persuasion.
+
+Our tale takes a decisive turn as the P-value enters the stage, casting away the shadows of chance. The statistical significance of this number reassures us that the correlation we observe is no mere play of fortune. It's a scripted part of the plot, affirming that the budget's role is not a fleeting cameo but a character with a part to play in the narrative of ratings.
+
+
+<p align="center">
+  <img src="./assets/img/budget-graph4.png" width="60%">
+</p>
+
+
+A heatmap illuminates our scene, revealing the dense cluster of hopes and dreams. The concentration of data points in the upper part of the budget axis tells us a story of aspiration—expensive productions often soar to the heights of ratings. Yet, this visual cue also cautions us: not all that glitters is gold, and not every lavish tale wins the hearts of critics.
+
+On the other end of our budgetary spectrum, the underdogs of cinema showcase their diverse palette of ratings. Low-budget creations dispel the myth that frugality foretells failure. They demonstrate that creativity isn't bound by the purse strings, and a modest budget can still capture the audience's imagination and critics' respect.
+Our story concludes, but the conversation is far from over. The data, like a film with layers of subtext, tells us that while there's a statistical significance between budget and ratings, the relationship is nuanced. Budgets might set the stage, but they do not dictate the final applause. The movie industry, a tapestry of artistry and commerce, proves that financial input is but one ingredient in the recipe for a movie's success.
+
+
+### The Diverse Worlds of Film Genres
+
+In the vast and varied universe of cinema, genres are like galaxies, each with its own distinct characteristics and gravitational pull. Our exploration into these worlds unveils intriguing patterns in the relationship between the financial investment of movie budgets and the artistic achievement of weighted scores.
+ 
+<p align="center">
+  <img src="./assets/img/budget-graph5.png" width="60%">
+</p>
+
+In the realms of Fantasy and Adventure, the budgets are celestial. These genres, with their need for elaborate set designs, special effects, and exotic locations, command hefty investments. They're like the gas giants of our cinematic solar system, massive and awe-inspiring.
+Family and Action films shine brightly in our budget galaxy. They attract investments similar to Fantasy and Adventure, aiming to appeal to a universal audience with star-studded casts and high production quality.
+Science Fiction, akin to Fantasy, often requires significant investment in creating new worlds and futuristic visions. These genres are the supernovas in our galaxy, dazzling with their special effects and expansive settings.
+While not as extravagant as Fantasy or Adventure, Thrillers and Film Adaptations still demand considerable budgets for A-list actors and high-quality production values, making them steady luminaries in our sky.
+These genres, with their need for accurate historical set designs or intricate plot details, can be costly, forming constellations that glow with the light of detailed craftsmanship.
+As we move towards Comedy and Crime Fiction, the budgets diminish. These genres rely more on script and character interaction, less on the blinding light of special effects or grand sets.
+Dramas and Romances, often character-driven and devoid of special effects, along with Indie films, which are known for their constrained budgets, are like the intimate stars in our cinematic sky, shining with a softer but no less significant light.
+
+As we venture further, scatter plots reveal the gravitational force between movie budgets and weighted scores, showcasing how this relationship varies across genres.
+
+
+<p align="center">
+  <img src="./assets/img/budget-graph6.png" width="60%">
+</p>
+
+The correlation coefficients range from a barely-there 0.06 in World Cinema to a more substantial 0.42 in Science Fiction. This spectrum tells us that the budget's impact on success varies widely across genres.
+In high-budget domains like Action, Adventure, and Science Fiction, we observe a stronger correlation. Here, the financial gravitas of production quality seems to pay off in higher weighted scores.
+Conversely, genres like World Cinema and Indie, where storytelling reigns over budget, show a weaker correlation. This suggests that in these realms, success orbits more closely around narrative quality than financial might.
+Genres like Drama, Mystery, and Family Film occupy a middle ground, indicating a balanced universe where budget and other factors like story and performances equally contribute to success.
+Across all genres, outliers remind us that rules in this cinematic universe are not absolute. High budgets do not always equate to high scores, nor do low budgets preclude success.
+
+
+For those navigating the financial cosmos of film production, our bar chart of correlation coefficients offers a star map. It guides investors and producers in allocating budgets, especially in genres like Science Fiction and Action, where the correlation between budget and success is most pronounced.
+In conclusion, our journey through the diverse worlds of film genres reveals a complex universe where budget and success intertwine in varied and fascinating ways. This exploration offers valuable insights for those charting courses in the film industry, highlighting the unique financial and creative dynamics of each genre. As we gaze at this cinematic cosmos, we are reminded that in the vast expanse of filmmaking, every genre, whether a bright star or a dim dwarf, contributes to the magnificent tapestry of cinema.
+
+
+Our exploration begins with the grandeur of Fantasy and Adventure—genres that whisk us away to realms beyond our imagination. Here, the budgets are as lofty as the mountains of Middle-earth, fueled by the need for intricate set designs, groundbreaking special effects, and the lure of distant lands. The financial might behind these tales of wonder is evident, as every dragon's scale and every hero's armor requires a king's ransom to bring to life.
+As we shift our gaze to Family and Action films, we find genres that cast a wide net, capturing the hearts of young and old alike. These stories, too, command considerable budgets, investing in star-studded casts and high-octane sequences that demand precision and spectacle. The result is a cinematic experience that draws crowds and captivates multiple generations.
+In the domain of Science Fiction and Action/Adventure, we encounter genres that are akin to launching a mission to the stars—ambitious, daring, and expensive. The futuristic visions and sprawling quests they present are backed by budgets that make the impossible possible, rendering every alien landscape and every adrenaline-fueled chase with stunning clarity.
+
+
+As the curtains draw briefly, we ponder on Thrillers and Film Adaptations, genres that, while not as budget-heavy as their fantastical counterparts, still command significant resources. They weave tales that may not require worlds to be built from scratch, but nonetheless demand A-list talent and production finesse to bring existing stories and historical epochs to life.
 
 ----
 
