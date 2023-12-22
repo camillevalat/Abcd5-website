@@ -431,6 +431,15 @@ So for now, our conclusions mean that you can create a movie on any topic and no
 
 ----
 
+## Conclusion
+
+As we come to an end in this journey, we can conclude that there are two factors that outshine the others in their effect on the rating a movie will get. The timing of a release can be as crucial as the storyline itself. Various genres resonate with different seasons, each embracing a distinct atmosphere. An example we’ve already seen: a good idea would be to release a romantic drama in December, for those who are without a partner during the holiday season…
+
+Of course, let's not forget the golden rule of life itself—money talks, even in the realm of filmmaking! Amidst all the creativeness, the budget remains an anchor, guiding the scale and potential of a production. Together, these elements are the stronger deterministic factors influencing the outcome of cinematic excellence. 
+
+We hope our analysis was able to offer a roadmap to captivate audiences and produce unforgettable experiences. 🙂
+
+
 <p align="center">
   <img src="./assets/img/the-end.jpg" width="80%">
 </p>
