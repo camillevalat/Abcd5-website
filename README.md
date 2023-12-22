@@ -521,7 +521,7 @@ As we come to an end in this journey, we can conclude that there are two factors
 
 Of course, let's not forget the golden rule of life itself—money talks, even in the realm of filmmaking! Amidst all the creativeness, the budget remains an anchor, guiding the scale and potential of a production. Together, these elements are the stronger deterministic factors influencing the outcome of cinematic excellence. 
 
-We hope our analysis was able to offer a roadmap to captivate audiences and produce unforgettable experiences. 🙂
+We hope our analysis was able to offer a roadmap to captivate audiences and produce unforgettable experiences.✨✨
 
 
 <p align="center">
@@ -530,7 +530,7 @@ We hope our analysis was able to offer a roadmap to captivate audiences and prod
 
 --- 
 
-#### Image references
+#### Image references 🏞
 
 [1] "The red way"  by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1293881">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1293881">Pixabay</a>
 
