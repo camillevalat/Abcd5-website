@@ -427,20 +427,20 @@ So for now, our conclusions mean that you can create a movie on any topic and no
 
 ## Budgets
 
-Welcome aboard, investors! You're about to explore the world of movie budgeting. Ready to see how smart investments in the film industry can turn into box office gold? Let's decode the budgeting secrets.
-Our dive into budget data reveals a crucial lesson: it's not about how much you spend, but how you spend it. Smart allocation can make the difference between a blockbuster and a bust. It's about striking that perfect balance between various production aspects.
+Welcome aboard investors! You're about to explore the fascinating world of movie budgeting. Ready to see how investments in the film industry can turn into box office gold? Let's decode the budgeting secrets.
+Our deep dive into budget data reveals a crucial lesson: it's not about how much you spend, but how you spend it. 
 
 ### Trends in Movie Budgets Over Time
 
-The film industry has witnessed a remarkable transformation over the decades. One of the most telling indicators of this evolution is the trend in movie budgets. This journey delves into how movie budgets have changed over time, painting a picture of an industry that's constantly pushing its financial frontiers.
+The film industry has witnessed a remarkable transformation over the decades. One of the most telling indicators of this evolution is the trend in movie budgets.It shows how movie budgets have ballooned over time, depicting an industry that's constantly pushing its financial frontiers.
 
 <p align="center">
   <img src="./assets/img/budget-graph1.png" width="60%">
 </p>
 
-In the initial frames of our analysis, we encounter a period of modesty and constraint. Prior to the 1980s, the world of cinema was marked by relatively low and less variable budgets. This era reflects a time when the industry was perhaps more restrained, both in terms of financial resources and the scope of cinematic ambitions.
+In the initial frames of our analysis, we encounter a period of constraint. Prior to the 1980s, the world of cinema was marked by relatively low and less variable budgets. This era reflects a time when the industry was more restrained, both in terms of financial resources and the scope of cinematic ambitions.
 
-As we move into the era of the 1980s, the plot takes a turn. Our scatter plot reveals a significant uptick in movie budgets. This period marks the onset of an era where the scales of movie production expanded, mirroring the growing appetite for more ambitious cinematic experiences.
+As we move into the era of the 1980s, the plot takes a turn. Our scatter plot  reveals a significant uptick in movie budgets. This period marks the onset of an era where the scales of movie production expanded, mirroring the growing appetite for more ambitious cinematic experiences.
 
 Alongside the rising budgets, we observe an intriguing subplot: an increase in the variability of these budgets. This trend points to a diversifying industry, where films range from modest indie projects to colossal blockbusters. The hexbin plot further illustrates this, highlighting the growing density of movie productions over time, especially post-1980s.
 
@@ -448,22 +448,21 @@ Alongside the rising budgets, we observe an intriguing subplot: an increase in t
   <img src="./assets/img/budget-graph2.png" width="60%">
 </p>
 
-While our hexbin plots offer a panoramic view of budget trends, they do not provide precise and quantifiable insights. Given this limitation, we introduce linear regression into our analysis, aiming to quantify and better understand these budgetary trends.
-
+While our hexbin plots offer a panoramic view of budget trends, they lack the depth to provide precise, quantifiable insights. Recognizing this limitation, we introduce linear regression into our analysis, aiming to quantify and better understand these budgetary trends. 
 
 ### Behind the Curtain of Movie Economics
 
-In the cinematic realm, the alchemy of transforming a budget into a successful movie is a tale as old as the industry itself. The question of whether financial heft translates to critical acclaim takes center stage in our analysis. We focus on the relationship between a movie's budget and its weighted score to unravel this enigma.
+In the cinematic world, the desire of transforming a budget into a masterpiece is a tale as old as the industry itself. The question of whether financial capital translates to good ratings takes center stage in our analysis. We look in to the relationship between a movie's budget and its weighted score.
 
 <p align="center">
   <img src="./assets/img/budget-graph3.png" width="60%">
 </p>
 
-The scatter plot lays out the vast landscape of our inquiry, where each dot represents a movie's financial blueprint against its artistic reception. As we follow the red thread of the linear regression line, we see the narrative of the budget's influence begin to unfold. This line suggests a positive correlation: more money might hint at a higher rating.
+The scatter plot responds to our question, where each dot represents a movie's financial blueprint against its artistic reception. This red line, suggests a positive correlation: more money might hint at a higher rating.
 
-The Pearson Correlation Coefficient, at a modest 0.307, plays a faint symphony—it whispers of a relationship between budget and score that exists, yet doesn't shout. It's a delicate dance between dollars and stars, where the step of one lightly influences the twirl of the other, suggesting that while bigger budgets are often associated with higher scores, the bond is not one of destiny, but rather, of gentle persuasion.
+The Pearson Correlation Coefficient, at 0.307, implies a relationship between budget and score that exist. Suggesting that while bigger budgets are often associated with higher scores, the bond is not an assurance, but rather,a helper.
 
-Our tale takes a decisive turn as the P-value enters the stage, casting away the shadows of chance. The statistical significance of this number reassures us that the correlation we observe is no mere play of fortune. It's a scripted part of the plot, affirming that the budget's role is not a fleeting cameo but a character with a part to play in the narrative of ratings.
+The P-value shows the importance of this correlation. The statistical significance of this number reassures us that the correlation we observe is not related to chance. It affirms that the budget's role is statistically significant to determine the weighted score.
 
 
 <p align="center">
@@ -471,52 +470,48 @@ Our tale takes a decisive turn as the P-value enters the stage, casting away the
 </p>
 
 
-A heatmap illuminates our scene, revealing the dense cluster of hopes and dreams. The concentration of data points in the upper part of the budget axis tells us a story of aspiration—expensive productions often soar to the heights of ratings. Yet, this visual cue also cautions us: not all that glitters is gold, and not every lavish tale wins the hearts of critics.
-
-On the other end of our budgetary spectrum, the underdogs of cinema showcase their diverse palette of ratings. Low-budget creations dispel the myth that frugality foretells failure. They demonstrate that creativity isn't bound by the purse strings, and a modest budget can still capture the audience's imagination and critics' respect.
-Our story concludes, but the conversation is far from over. The data, like a film with layers of subtext, tells us that while there's a statistical significance between budget and ratings, the relationship is nuanced. Budgets might set the stage, but they do not dictate the final applause. The movie industry, a tapestry of artistry and commerce, proves that financial input is but one ingredient in the recipe for a movie's success.
+A heatmap reveals the dense cluster of hopes and dreams. The concentration of data points in the upper echelons of the budget axis tells us a story of expensive productions. Yet, it shows that  not all that glitters is gold, and not every expensive tale wins the best critics.
 
 
 ### The Diverse Worlds of Film Genres
-
-In the vast and varied universe of cinema, genres are like galaxies, each with its own distinct characteristics and gravitational pull. Our exploration into these worlds unveils intriguing patterns in the relationship between the financial investment of movie budgets and the artistic achievement of weighted scores.
  
 <p align="center">
   <img src="./assets/img/budget-graph5.png" width="60%">
 </p>
 
-In the realms of Fantasy and Adventure, the budgets are celestial. These genres, with their need for elaborate set designs, special effects, and exotic locations, command hefty investments. They're like the gas giants of our cinematic solar system, massive and awe-inspiring.
-Family and Action films shine brightly in our budget galaxy. They attract investments similar to Fantasy and Adventure, aiming to appeal to a universal audience with star-studded casts and high production quality.
-Science Fiction, akin to Fantasy, often requires significant investment in creating new worlds and futuristic visions. These genres are the supernovas in our galaxy, dazzling with their special effects and expansive settings.
-While not as extravagant as Fantasy or Adventure, Thrillers and Film Adaptations still demand considerable budgets for A-list actors and high-quality production values, making them steady luminaries in our sky.
-These genres, with their need for accurate historical set designs or intricate plot details, can be costly, forming constellations that glow with the light of detailed craftsmanship.
+Fantasy and Adventure have the post stratospheric budgets . These genres, with their need for elaborate set designs, special effects, and exotic locations, demand investments.
+Family and Action films have high budgets as well. They attract investments similar to Fantasy and Adventure, aiming to appeal to a universal audience with star-studded casts and high production quality.
+
+Science Fiction,  like Fantasy, often requires significant investment in creating new worlds and futuristic visions.
+
+While not as extravagant as Fantasy or Adventure, Thrillers and Film Adaptations still demand considerable budgets for A-list actors and high-quality production values.
+These genres, with their need for accurate historical set designs or intricate plot details, can be costly.
+
 As we move towards Comedy and Crime Fiction, the budgets diminish. These genres rely more on script and character interaction, less on the blinding light of special effects or grand sets.
-Dramas and Romances, often character-driven and devoid of special effects, along with Indie films, which are known for their constrained budgets, are like the intimate stars in our cinematic sky, shining with a softer but no less significant light.
+
+Dramas and Romances, often character-driven and devoid of special effects, along with Indie films, which are known for their constrained budgets.
 
 As we venture further, scatter plots reveal the gravitational force between movie budgets and weighted scores, showcasing how this relationship varies across genres.
-
 
 <p align="center">
   <img src="./assets/img/budget-graph6.png" width="60%">
 </p>
 
 The correlation coefficients range from a barely-there 0.06 in World Cinema to a more substantial 0.42 in Science Fiction. This spectrum tells us that the budget's impact on success varies widely across genres.
+
 In high-budget domains like Action, Adventure, and Science Fiction, we observe a stronger correlation. Here, the financial gravitas of production quality seems to pay off in higher weighted scores.
+
 Conversely, genres like World Cinema and Indie, where storytelling reigns over budget, show a weaker correlation. This suggests that in these realms, success orbits more closely around narrative quality than financial might.
+
 Genres like Drama, Mystery, and Family Film occupy a middle ground, indicating a balanced universe where budget and other factors like story and performances equally contribute to success.
+
 Across all genres, outliers remind us that rules in this cinematic universe are not absolute. High budgets do not always equate to high scores, nor do low budgets preclude success.
 
 
-For those navigating the financial cosmos of film production, our bar chart of correlation coefficients offers a star map. It guides investors and producers in allocating budgets, especially in genres like Science Fiction and Action, where the correlation between budget and success is most pronounced.
-In conclusion, our journey through the diverse worlds of film genres reveals a complex universe where budget and success intertwine in varied and fascinating ways. This exploration offers valuable insights for those charting courses in the film industry, highlighting the unique financial and creative dynamics of each genre. As we gaze at this cinematic cosmos, we are reminded that in the vast expanse of filmmaking, every genre, whether a bright star or a dim dwarf, contributes to the magnificent tapestry of cinema.
+For those navigating the financial cosmos of film production, our bar chart of correlation coefficients offers an insight into the importance of movie budgets relating to the public appreciation. It guides investors and producers in allocating budgets, especially in genres like Science Fiction and Action, where the correlation between budget and success is most pronounced.
 
+In conclusion, our journey through the diverse worlds of film genres reveals a complex universe where budget and success intertwine in varied ways. This exploration offers valuable insights for those charting courses in the film industry, highlighting the financial and creative dynamics of each genre.
 
-Our exploration begins with the grandeur of Fantasy and Adventure—genres that whisk us away to realms beyond our imagination. Here, the budgets are as lofty as the mountains of Middle-earth, fueled by the need for intricate set designs, groundbreaking special effects, and the lure of distant lands. The financial might behind these tales of wonder is evident, as every dragon's scale and every hero's armor requires a king's ransom to bring to life.
-As we shift our gaze to Family and Action films, we find genres that cast a wide net, capturing the hearts of young and old alike. These stories, too, command considerable budgets, investing in star-studded casts and high-octane sequences that demand precision and spectacle. The result is a cinematic experience that draws crowds and captivates multiple generations.
-In the domain of Science Fiction and Action/Adventure, we encounter genres that are akin to launching a mission to the stars—ambitious, daring, and expensive. The futuristic visions and sprawling quests they present are backed by budgets that make the impossible possible, rendering every alien landscape and every adrenaline-fueled chase with stunning clarity.
-
-
-As the curtains draw briefly, we ponder on Thrillers and Film Adaptations, genres that, while not as budget-heavy as their fantastical counterparts, still command significant resources. They weave tales that may not require worlds to be built from scratch, but nonetheless demand A-list talent and production finesse to bring existing stories and historical epochs to life.
 
 ----
 
